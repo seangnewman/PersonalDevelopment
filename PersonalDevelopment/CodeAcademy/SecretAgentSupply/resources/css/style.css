@@ -8,15 +8,18 @@ body{
 
   margin: 0 auto;
 
+
+
 }
 
 .top-container {
   background-image: url("../../resources/images/moto.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 80%;
+  background-position: 0 40%;
   height: 31rem;
-  width: auto;
+  width: 100%;
+  overflow: visible;
   position: relative;
 
 }
@@ -29,10 +32,12 @@ body{
 
 }
 
-.secret-container, .footer-container, .arrival_insert  {
+.secret-container, .footer-container, .arrival-container, .center-container, .location_container, .bottom-container {
 
   width: 960px;
   margin: 0 auto;
+  position: relative;
+
 
 }
 
@@ -51,53 +56,159 @@ body{
   font-size: 1rem;
   padding: .66rem 0;
   display:inline-block;
+  justify-content: space-between;;
 
 }
-
 
 .secret-footer {
 
   background-color: firebrick;
-  padding: .66rem;
+  padding: .66rem 0;
+
   width: 100%;
   position: absolute;
   bottom: 0;
-  display: flex;
+
   color:white;
 
 }
-.arrival {
-margin: 0;
+.arrival-heading {
 }
 
-.arrival_insert{
-  width : 20rem;
+.arrival-container{
+  color:white;
   margin-top: 9rem;
-  background-color: black;
-  color:white;
-
 }
 
+.arrival-text {
+  width: 20rem;
+  background-color: black;
+  padding: 2rem 3rem;
+}
 
-.footer-container {
-  display: inline-flex;
+#new_arrival {
 
-    align-content: space-between;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
+#products {
+  font-size:  2rem;
+  font-weight: bold;;
 }
 
 .footer-container ul {
-  display:table;
+  display:flex;
+  justify-content: space-between;
 }
 
 .footer-container li{
-  padding: 0.75rem 0;
-  margin-right: 40px;
   font-size: 1.5rem;
-  display: inline;
+
 }
 
 .footer-container a, a:hover{
    color: white;
    text-decoration:none;
+}
+
+.center-images {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.images {
+  border: 4px solid black;
+  width: 30%;
+  height: 15.5rem;
+  display: inline-block;
+
+  min-height: 13rem;
+  margin: 3rem 0;
+}
+
+
+.images img{
+  margin 0 auto;
+  max-height: 9em;
+  width: auto;
+  padding: 2rem 4rem;
+}
+
+
+
+
+#glasses {
+  transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  margin: 0 -6rem;
+ }
+
+.images p {
+    width: 100%;
+
+    text-align:center;
+
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+}
+
+.location_container{
+  padding-bottom: 4rem;
+}
+
+.location_hours{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+
+
+}
+
+.location_block{
+  width: 35%;
+
+}
+
+.location {
+
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.location_block p{
+
+}
+
+.bottom {
+  background-color: black;
+  height: 5rem;
+  color:white;
+  vertical-align:middle;
+}
+
+.bottom-container{
+
+  text-align: left;
+  height: 100%;
+
+
+
+
+
+}
+
+#copywrite{
+
+   position: absolute;
+   top: 50%;
+
 }

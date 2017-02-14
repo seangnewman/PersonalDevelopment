@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+ <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
   <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
 
 </head>
@@ -15,10 +15,13 @@
       <p>SECRET AGENT SUPPLY INC.</p>
     </div>
     </div>
-    <div class="arrival">
-      <div class="arrival_insert">
+
+    <div class="arrival-heading">
+      <div class="arrival-container">
+        <div class="arrival-text">
       <p id="new_arrival">New Arrival</p>
       <p id="products">Sport Bikes and Motorcycles</p>
+    </div>
       </div>
   </div>
 
@@ -37,24 +40,47 @@
     </div>
 
   </div> <!-- top container -->
-  <div class="center-container">
-    <div class+"images">
-      <div id="pen"></div>
-      <div id="watch"></div>
-      <div id="glasses"></div>
-    </div>
-    <div class="location_hours">
-    <div class="location">
-    </div>
-    <div class="hours">
-    </div>
-    <div>
+  <div class = "center-heading">
+  <div class="center-container" id="imagesContainer">
+    <div class="center-images">
 
+      <div class="images"  id="pen" >
+         <img src="./resources/images/pen.png" alt="Exploding Peh"/>
+         <p>Exploding Pen</p>
+     </div>
+
+      <div class="images" id="watch">
+        <img src="./resources/images/watch.png" alt="Super Agent Watch"/>
+       <p>Cellular Watch</p>
+      </div>
+      <div class="images">
+
+      <img id="glasses" src="./resources/images/glasses.png" alt="Super Agent Thermal Glasses"/>
+      <p>Thermal Glasses</p>
+    </div>
+  </div>
   </div> <!-- center container -->
+</div>
+
+<div class = "location_container">
+<div class="location_hours">
+<div class=location_block>
+<div class="location">Location</div>
+<p>47.346436, 84.32354</p>
+</div>
+
+<div class=location_block>
+<div class="location">Hours</div>
+<p>0800-1800</p>
+</div>
+</div>
+</div>
+
+  <div class="bottom">
   <div class="bottom-container">
-
+     <span id="copywrite"><p>&copy Secret Agent Supply Inc.</p></span>
   </div> <!-- bottom container -->
-
+</div>
 
 </div><!-- Body Container -->
 </body>
