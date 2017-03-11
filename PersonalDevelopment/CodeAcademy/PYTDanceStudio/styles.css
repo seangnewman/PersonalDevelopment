@@ -1,0 +1,317 @@
+
+
+html {
+ font-family: 'Roboto', sans-serif;
+ font-size: 16px;
+ color:#ffffff;
+}
+
+body {
+
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.top_navigation {
+  opacity: .90;
+
+}
+.bottom_navigation {
+  opacity: .30;
+
+}
+
+.top_navigation .nav_logo {
+  height: 3.875rem;
+}
+
+.bottom_navigation .nav_logo {
+  height: 3.125rem;
+}
+
+.nav_logo {
+
+  width: :100%;
+  background-color: #000000;
+  padding-left: 3.6875rem;
+  padding-right: 3.4375rem;
+  vertical-align: top;
+  text-align: right;
+  display: flex;
+ justify-content: space-between;
+
+}
+
+.logo {
+  display:inline-flex;
+  height: 50px;
+  float: left;
+}
+
+.navigation {
+  align-content: right;
+  justify-content: right;
+  text-align: right;
+}
+
+.navigation ul {
+  justify-content: space-between;
+}
+
+.navigation li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 1rem;
+  padding-right: 2rem;
+}
+
+.navigation a {
+  font-family: 'Open Sans' sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color:#ffffff;
+  text-decoration: none;
+}
+
+
+.top_section {
+  height: 38.125rem;
+  width:auto;
+  background-image: url("../../resources/images/dancers-photo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main_banner .banner{
+  font-size: 3.125rem;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 9.4375rem;
+  text-transform: uppercase;
+  padding-bottom: 2.6875rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main_banner .sub_banner {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-bottom: 5rem;
+}
+
+.main_banner {
+  width:45rem;
+  margin: 0 auto;
+}
+
+.button {
+  border-radius: 2px;
+  background-color: #f5a623;
+  font-family: 'Open Sans' sans-serif;;
+  font-size: 1.375rem;
+  font-weight: bold;
+  color:#ffffff;
+  padding: 1.25rem 3.125rem;
+}
+
+.button a{
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.body_section {
+  height: 31.25rem;
+  width:auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.body_section .programs {
+  width: 25rem;
+  height:20rem;
+  margin-top: 11.125rem;
+  float: right;
+}
+.program_content{
+  margin: 3rem;
+}
+
+.program_heading{
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.program_body {
+  margin-bottom: 1.25rem;
+  font-size:1.125rem;
+  line-height: 1.4;
+}
+
+.program_blog{
+  font-weight: bold;
+  font-size:1.125rem;
+}
+
+
+#program1, #program3 {
+  background-color: rgba(120,73,225,0.9);
+}
+
+#program2 {
+  background-color: rgba(173,74,226,0.9);
+}
+
+#graffiti {
+  background-image: url("../../resources/images/graffiti-photo.png");
+}
+
+#fire {
+  background-image: url("../../resources/images/fire-photo.png");
+}
+
+#jump {
+  background-image: url("../../resources/images/jump-photo.png");
+}
+
+.bottom_section {
+  height: 18.125rem;
+  width:auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../resources/images/party-photo.png");
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bottom_section .social_media{
+ width:9.375rem;
+
+ display: flex;
+ justify-content: space-between;
+
+
+}
+
+.bottom_section .social_media a{
+  text-decoration: none;
+   color:#ffffff;
+}
+
+
+
+.bottom_section .social_media i{
+  margin-top: 0.5rem;
+}
+
+.bottom_section .contact {
+  padding-top: 5rem;
+  font-size: .875rem;
+  letter-spacing: 0.7px;
+}
+
+.bottom_section .contact p{
+  padding: 0.875rem 0;
+}
+
+.pyt_contact {
+  display: flex;
+  justify-content: center;
+}
+.pyt_contact p{
+  display:inline-flex;
+}
+
+.pyt_contact #pyt_break, .pyt_contact #constant_break{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+
+
+@media only screen and (min-width:760px) and (max-width:1024px) and (orientation:portrait){
+  html{
+    background-color:  black;
+
+  }
+  .main_banner {
+    width:31.25rem;
+  }
+  .body_section .programs {
+    width: 100%;
+    height:12.1875rem;
+    margin-top: 19.0625rem;
+  }
+
+  .program_content{
+    margin: 1.875rem 3.4375rem 1.875rem 1.875rem;
+  }
+
+  .program_heading{
+    font-size: 1.875rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+  }
+
+  .program_body {
+    margin-bottom: 0.625rem;
+    font-size:1rem;
+    line-height: 1.5;
+  }
+ .bottom_navigation .nav_logo .logo, .bottom_navigation .navigation{
+   display:none;
+ }
+
+ .bottom_section .social_media{
+  width:5.4375rem;
+
+  display: flex;
+  justify-content: space-between;
+   align-content: center;
+   margin: 0 auto;
+
+ }
+
+ .bottom_section {
+   height: 11.25rem;
+   margin: 0 auto;
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+ }
+
+ .bottom_navigation .nav_logo {
+   height: 2.5rem;
+ }
+
+
+.bottom_navigation .social_media .fa{
+  font-size: 1rem;
+}
+address {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+address #pyt_break{
+  display:none
+}
+.bottom_section .contact {
+  padding-top: 1.875rem;
+  font-size: .625rem;
+  letter-spacing: 0.5px;
+  line-height: .5rem;
+
+
+
+}
+
+
+
+
+}
