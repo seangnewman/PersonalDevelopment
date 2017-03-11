@@ -38,14 +38,25 @@ body {
   vertical-align: top;
   text-align: right;
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
 
 }
 
+.logo_container{
+  width: 8rem;
+  height:50px;
+  display:flex;
+}
+
 .logo {
-  display:inline-flex;
+  background-image: url("../../resources/images/logo-color.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  width: 200px;
   height: 50px;
-  float: left;
+
+
 }
 
 .navigation {
@@ -112,12 +123,13 @@ body {
   font-size: 1.375rem;
   font-weight: bold;
   color:#ffffff;
-  padding: 1.25rem 3.125rem;
+  padding: : 1.25rem 3.125rem;
 }
 
 .button a{
   color:#ffffff;
   text-decoration: none;
+
 }
 
 .body_section {
@@ -235,11 +247,105 @@ body {
 
 @media only screen and (min-width:760px) and (max-width:1024px) and (orientation:portrait){
   html{
-    background-color:  black;
+
+
+  }
+
+  body {
+
+    width: 100vw;
 
   }
   .main_banner {
     width:31.25rem;
+  }
+
+
+  .main_banner .sub_banner {
+    font-size: 1.25rem;
+    line-height: 1.25;
+
+  }
+
+
+  .body_section .programs {
+    width: 100%;
+    height:12.1875rem;
+    margin-top: 19.0625rem;
+  }
+
+  .program_content{
+    margin: 1.875rem 3.4375rem 1.875rem 1.875rem;
+  }
+
+  .program_heading{
+    font-size: 1.875rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+  }
+
+  .program_body {
+    margin-bottom: 0.625rem;
+    font-size:1rem;
+    line-height: 1.5;
+  }
+ .bottom_navigation .nav_logo .logo, .bottom_navigation .navigation{
+   display:none;
+ }
+
+ .bottom_section .social_media{
+  width:5.4375rem;
+
+  display: flex;
+  justify-content: space-between;
+   align-content: center;
+   margin: 0 auto;
+
+ }
+
+ .bottom_section {
+   height: 11.25rem;
+   margin: 0 auto;
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+ }
+
+ .bottom_navigation .nav_logo {
+   height: 2.5rem;
+ }
+
+ .bottom_navigation .social_media .fa{
+   font-size: 1rem;
+ }
+ address {
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+ }
+
+ address #pyt_break{
+   display:none
+ }
+ .bottom_section .contact {
+   padding-top: 1.875rem;
+   font-size: .625rem;
+   letter-spacing: 0.5px;
+   line-height: .5rem;
+ }
+}
+
+@media only screen and (min-width:760px) and (max-width:1024px) and (orientation:landscape){
+  html{
+  }
+  .main_banner {
+    width:31.25rem;
+  }
+
+  body {
+
+    width: 100vw;
+
   }
   .body_section .programs {
     width: 100%;
@@ -288,30 +394,165 @@ body {
    height: 2.5rem;
  }
 
+ .bottom_navigation .social_media .fa{
+   font-size: 1rem;
+ }
+ address {
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+ }
 
-.bottom_navigation .social_media .fa{
-  font-size: 1rem;
-}
-address {
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}
-
-address #pyt_break{
-  display:none
-}
-.bottom_section .contact {
-  padding-top: 1.875rem;
-  font-size: .625rem;
-  letter-spacing: 0.5px;
-  line-height: .5rem;
-
-
-
+ address #pyt_break{
+   display:none
+ }
+ .bottom_section .contact {
+   padding-top: 1.875rem;
+   font-size: .625rem;
+   letter-spacing: 0.5px;
+   line-height: .5rem;
+ }
 }
 
+@media only screen and (max-width:759px) {
+  html{
+    background-color:  black;
+
+  }
+
+  body {
+
+    width: 100vw;
+
+  }
+  .main_banner {
+    width:18.5rem;
+  }
+
+  .top_navigation .nav_logo {
+    height: 2.5rem;
+  }
 
 
+  .logo {
+    height: 32px;
 
-}
+  }
+  .nav_logo {
+
+    width: :100%;
+    background-color: #000000;
+    padding-left: .625rem;
+    padding-right:.625rem;
+      }
+  .logo {
+        background-image: url("../../resources/images/logo-mobile.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width:3rem;
+        height: 2.5rem;
+      }
+
+      .navigation a {
+        font-family: 'Open Sans' sans-serif;
+        font-size: 0.75rem;
+        font-weight: bold;
+        color:#ffffff;
+        text-decoration: none;
+      }
+      .navigation li {
+        padding-top: 0.5rem;
+      }
+
+
+      .main_banner .banner{
+        font-size: 1.875rem;
+        padding-top: 7.125rem;
+        text-transform: uppercase;
+        padding-bottom: 1.625rem;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .main_banner .sub_banner {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding-bottom: 3.875rem;
+      }
+
+      .main_banner {
+        width:18.5rem;
+        margin: 0 auto;
+      }
+      .body_section .programs {
+        width: 100%;
+        height:12.1875rem;
+        margin-top: 19.0625rem;
+      }
+
+      .program_content{
+        margin: 1.875rem 1.25rem 1.875rem 1.25rem;
+      }
+
+      .program_heading{
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 0.625rem;
+      }
+
+      .program_body {
+        margin-bottom: 0.625rem;
+        font-size:1rem;
+        line-height: 1.5;
+      }
+
+      .program_blog{
+        font-size: 1rem;
+      }
+
+      .bottom_navigation .nav_logo .logo, .bottom_navigation .navigation{
+       display:none;
+      }
+
+      .bottom_section .social_media{
+      width:5.4375rem;
+
+      display: flex;
+      justify-content: space-between;
+       align-content: center;
+       margin: 0 auto;
+
+      }
+
+      .bottom_section {
+       height: 11.25rem;
+       margin: 0 auto;
+       text-align: center;
+       font-family: 'Roboto', sans-serif;
+      }
+
+      .bottom_navigation .nav_logo {
+       height: 2.5rem;
+      }
+
+      .bottom_navigation .social_media .fa{
+       font-size: 1rem;
+      }
+      address {
+       flex-direction: column;
+       align-items: center;
+       margin: 0 auto;
+      }
+
+      address #pyt_break{
+       display:none
+      }
+      .bottom_section .contact {
+       padding-top: 1.875rem;
+       font-size: .625rem;
+       letter-spacing: 0.5px;
+       line-height: .5rem;
+      }
+
+
+  }
