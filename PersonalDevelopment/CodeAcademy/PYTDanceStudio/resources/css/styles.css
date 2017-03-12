@@ -18,6 +18,7 @@ body {
 }
 .bottom_navigation {
   opacity: .30;
+  color:#ffffff;
 
 }
 
@@ -27,6 +28,7 @@ body {
 
 .bottom_navigation .nav_logo {
   height: 3.125rem;
+
 }
 
 .nav_logo {
@@ -94,6 +96,19 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
+
+.top_section_classes {
+  height: 43.125rem;
+  width:auto;
+
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 0.5rem  rgb(174, 75, 227) solid;
+
+}
+
+
 
 .main_banner .banner{
   font-size: 3.125rem;
@@ -189,14 +204,15 @@ body {
 }
 
 .bottom_section {
-  height: 18.125rem;
+  height: 20.125rem;
   width:auto;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../../resources/images/party-photo.png");
   margin: 0 auto;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  color:#f00000;
 }
 
 .bottom_section .social_media{
@@ -223,26 +239,128 @@ body {
   padding-top: 5rem;
   font-size: .875rem;
   letter-spacing: 0.7px;
+  color:#ffffff;
 }
 
 .bottom_section .contact p{
   padding: 0.875rem 0;
 }
 
-.pyt_contact {
+.pyt_contact_info {
   display: flex;
   justify-content: center;
 }
+
+
+
 .pyt_contact p{
   display:inline-flex;
+
 }
 
-.pyt_contact #pyt_break, .pyt_contact #constant_break{
+.pyt_contact_info #pyt_break, .pyt_contact_info #constant_break{
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
+.top_section_container{
 
+}
+
+.classes_img {
+  width:45%;
+  height: 100%;
+  background-image: url("../../resources/images/classes-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  float: left;
+}
+
+.classes_text{
+  width:45%;
+  height: 100%;
+  float: right;
+  color:black;
+  margin: 0 auto;
+}
+
+.classes_text .banner{
+  font-size: 3.125rem;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 14.4375rem;
+  text-transform: uppercase;
+  padding-bottom: 2.6875rem;
+  font-family: 'Roboto', sans-serif;
+  color:rgba(174,75,227,0.9);
+  width:85%;
+}
+
+.classes_text .sub_banner {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-bottom: 5rem;
+  width:85%;
+
+}
+
+
+.classes_section {
+  height: 31.25rem;
+  width:auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color:black;
+
+}
+
+.classes_container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color:black;
+  padding: 1.5625rem 1.125rem 2.4rem 1.125rem;
+
+}
+
+.classTime {
+  width:25rem;
+  display:inline-block;
+
+}
+
+.classTime .className {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgba(174,75,227,0.9);
+  margin-bottom: 1.125rem;
+  margin-top:3.75rem;
+
+}
+
+.classTime .DaysTimesOfWeek {
+  margin-bottom: 1.125rem;
+}
+
+.classTime .DaysTimesOfWeek #DayOfWeek{
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.classTime .DaysTimesOfWeek #Times{
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color:#000000;
+}
+
+.classTime p{
+  font-size:.875rem;
+  line-height: 1.7;
+
+}
 
 
 @media only screen and (min-width:760px) and (max-width:1024px) and (orientation:portrait){
@@ -309,6 +427,7 @@ body {
    margin: 0 auto;
    text-align: center;
    font-family: 'Roboto', sans-serif;
+
  }
 
  .bottom_navigation .nav_logo {
@@ -318,13 +437,13 @@ body {
  .bottom_navigation .social_media .fa{
    font-size: 1rem;
  }
- address {
+ .pyt_contact_info {
    flex-direction: column;
    align-items: center;
    margin: 0 auto;
  }
 
- address #pyt_break{
+ .pyt_contact_info #pyt_break{
    display:none
  }
  .bottom_section .contact {
@@ -334,6 +453,8 @@ body {
    line-height: .5rem;
  }
 }
+
+
 
 @media only screen and (min-width:760px) and (max-width:1024px) and (orientation:landscape){
   html{
@@ -397,13 +518,13 @@ body {
  .bottom_navigation .social_media .fa{
    font-size: 1rem;
  }
- address {
+ .pyt_contact_info {
    flex-direction: column;
    align-items: center;
    margin: 0 auto;
  }
 
- address #pyt_break{
+ .pyt_contact_info #pyt_break{
    display:none
  }
  .bottom_section .contact {
@@ -538,13 +659,13 @@ body {
       .bottom_navigation .social_media .fa{
        font-size: 1rem;
       }
-      address {
+      .pyt_contact_info {
        flex-direction: column;
        align-items: center;
        margin: 0 auto;
       }
 
-      address #pyt_break{
+      .pyt_contact_info #pyt_break{
        display:none
       }
       .bottom_section .contact {
