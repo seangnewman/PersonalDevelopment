@@ -29,6 +29,7 @@ body {
 .bottom_navigation .nav_logo {
   height: 3.125rem;
 
+
 }
 
 .nav_logo {
@@ -43,6 +44,13 @@ body {
   justify-content: space-between;
 
 }
+
+.bottom_section .nav_logo .navigation li a{
+  color:white;
+}
+
+
+
 
 .logo_container{
   width: 8rem;
@@ -104,6 +112,7 @@ body {
 
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 2rem;
   border-bottom: 0.5rem  rgb(174, 75, 227) solid;
 
 }
@@ -205,8 +214,8 @@ body {
 
 .bottom_section {
   height: 20.125rem;
-  width:auto;
-  background-size: contain;
+  width:100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../../resources/images/party-photo.png");
   margin: 0 auto;
@@ -351,7 +360,7 @@ body {
 }
 
 .classTime .DaysTimesOfWeek #Times{
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5;
   color:#000000;
 }
@@ -362,101 +371,127 @@ body {
 
 }
 
+#faculty_dept{
+    background-image: url("../../resources/images/faculty-photo.png");
+    color:#999999;
+    margin: 0 auto;
+    padding-left:20rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.5rem #8a54ff solid;
+}
 
-@media only screen and (min-width:760px) and (max-width:1024px) and (orientation:portrait){
-  html{
+#faculty_dept .banner{
+    color:rgba(174,75,227,0.9);
+    margin-bottom: 2rem;
+}
 
+#faculty_dept .sub_banner{
 
-  }
+}
 
-  body {
+.faculty_section {
+  height: auto;
+  width:100%;
+  background-size: 100% 100%;
 
-    width: 100vw;
+  color:black;
 
-  }
-  .main_banner {
-    width:31.25rem;
-  }
+}
 
-
-  .main_banner .sub_banner {
-    font-size: 1.25rem;
-    line-height: 1.25;
-
-  }
-
-
-  .body_section .programs {
-    width: 100%;
-    height:12.1875rem;
-    margin-top: 19.0625rem;
-  }
-
-  .program_content{
-    margin: 1.875rem 3.4375rem 1.875rem 1.875rem;
-  }
-
-  .program_heading{
-    font-size: 1.875rem;
-    font-weight: bold;
-    line-height: 1.4;
-    margin-bottom: 0.625rem;
-  }
-
-  .program_body {
-    margin-bottom: 0.625rem;
-    font-size:1rem;
-    line-height: 1.5;
-  }
- .bottom_navigation .nav_logo .logo, .bottom_navigation .navigation{
-   display:none;
- }
-
- .bottom_section .social_media{
-  width:5.4375rem;
-
+.facultyContainer{
+  width: 100%;
   display: flex;
   justify-content: space-between;
-   align-content: center;
-   margin: 0 auto;
+  align-content:center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color:black;
+  padding: 1.5625rem 0.5625rem 1.35rem 0.5625rem;
+  margin-top: 5.625;
+  margin-bottom: 11.25rem;
 
- }
+}
 
- .bottom_section {
-   height: 11.25rem;
-   margin: 0 auto;
-   text-align: center;
-   font-family: 'Roboto', sans-serif;
+.facultyMembers {
+  width:16.875rem;
+  height: auto;
+  display:inline-block;
+  margin-top: 6.25rem;
 
- }
+}
 
- .bottom_navigation .nav_logo {
-   height: 2.5rem;
- }
+.facultyImage{
 
- .bottom_navigation .social_media .fa{
-   font-size: 1rem;
- }
- .pyt_contact_info {
-   flex-direction: column;
-   align-items: center;
-   margin: 0 auto;
- }
 
- .pyt_contact_info #pyt_break{
-   display:none
- }
- .bottom_section .contact {
-   padding-top: 1.875rem;
-   font-size: .625rem;
-   letter-spacing: 0.5px;
-   line-height: .5rem;
- }
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 16.875rem;
+}
+
+#johnny{
+  background-image: url("../../resources/images/faculty/johnny.png");
+}
+#aaron{
+  background-image: url("../../resources/images/faculty/aaron.png");
+}
+#ann{
+  background-image: url("../../resources/images/faculty/ann.png");
+}
+#ella{
+  background-image: url("../../resources/images/faculty/ella.png");
+}
+#eva{
+  background-image: url("../../resources/images/faculty/eva.png");
+}
+#gary{
+  background-image: url("../../resources/images/faculty/gary.png");
+}
+#helena{
+  background-image: url("../../resources/images/faculty/helena.png");
+}
+#luella{
+  background-image: url("../../resources/images/faculty/luella.png");
+}
+#noah{
+  background-image: url("../../resources/images/faculty/noah.png");
+}
+
+
+.facultyBio{
+
+  text-align: center;
+}
+
+
+.facultyName {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgba(174,75,227,0.9);
+  margin-bottom: .625rem;
+  margin-top:1.25rem;
+}
+.facultyRole{
+  padding-bottom: .625rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+#facultysDescription{
+  font-size:1rem;
+  line-height: 1.5;
+
 }
 
 
 
-@media only screen and (min-width:760px) and (max-width:1024px) and (orientation:landscape){
+
+
+
+
+
+@media only screen and (min-width:760px) and (max-width:1024px) {
   html{
   }
   .main_banner {
@@ -533,11 +568,75 @@ body {
    letter-spacing: 0.5px;
    line-height: .5rem;
  }
+
+
+ .classTime .className {
+
+   margin-top:2.25rem;
+
+ }
+
+
+ .classTime {
+   width:18.75rem;
+   display:inline-block;
+
+ }
+
+ .classTime .DaysTimesOfWeek #Times{
+   font-size: 1.125rem;
+   }
+   .classTime p{
+
+     line-height: 1.5;
+
+   }
+   .top_section_container{
+     display:block;
+     flex-direction: column;
+     justify-content: center;
+
+   }
+
+   .classes_img {
+     width:100%;
+     height: 75%;
+     background-size: 100% 100%;
+   }
+
+   .classes_text{
+     width:100%;
+     height: 20%;
+
+     text-align: center;
+
+   }
+
+
+   .classes_text .banner{
+     font-size: 1.75rem;
+     padding-top: 2rem;
+     text-transform: uppercase;
+     padding-bottom: 2rem;
+     font-family: 'Roboto', sans-serif;
+     color:rgba(174,75,227,0.9);
+     width:100%;
+
+   }
+
+   .classes_text .sub_banner {
+     margin-bottom: 1rem;
+     font-size: 1.125rem;
+     width:100%;
+     height:auto;
+
+   }
+
+
 }
 
 @media only screen and (max-width:759px) {
   html{
-    background-color:  black;
 
   }
 
@@ -674,6 +773,136 @@ body {
        letter-spacing: 0.5px;
        line-height: .5rem;
       }
+
+      .top_section_container{
+        display:block;
+        flex-direction: column;
+        justify-content: center;
+
+
+      }
+
+      .classes_img {
+        width:100%;
+        height: 75%;
+        background-size: 100% 100%;
+      }
+
+      .classes_text{
+        width:100%;
+        height: 20%;
+
+        text-align: center;
+
+      }
+
+
+      .classes_text .banner{
+        font-size: 1.75rem;
+        padding-top: 2rem;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+        font-family: 'Roboto', sans-serif;
+        color:rgba(174,75,227,0.9);
+        width:100%;
+
+      }
+
+      .classes_text .sub_banner {
+        padding-bottom: 1rem;
+        font-size: 1.125rem;
+        width:100%;
+        height:auto;
+
+      }
+
+
+      .classes_section {
+      }
+
+       .classTime {
+         width:17.5em;
+         display:inline-block;
+         margin: 0 auto;
+
+       }
+
+
+       .classTime .className {
+
+         margin-top:2.5rem;
+
+       }
+
+
+       .classTime {
+         width:17.5rem;
+         display:inline-block;
+
+       }
+
+       .classTime .DaysTimesOfWeek #Times{
+         font-size: 0.875rem;
+         line-height: 1.7;
+         }
+
+         .classTime p{
+           font-size: 0.875rem;
+           line-height: 1.7;
+         }
+
+
+         .facultyName {
+           font-size: 1.5rem;
+          }
+         .facultyRole{
+           font-size: 1rem;
+         }
+
+         #facultysDescription {
+           font-size:.875rem;
+           line-height: 1.7;
+         }
+
+         #faculty_dept{
+           margin:0;
+
+           text-align: left;
+           padding: .625rem .625rem 0 .625rem;
+
+
+
+         }
+
+         .main_faculty_banner{
+
+           text-align: center;
+           width: 70%;
+           margin-bottom: 0;
+
+
+         }
+
+         .main_faculty_banner p{
+
+           margin-top: 0;
+           width: 90%;
+
+         }
+         #falculty_banner{
+           margin-top:15rem;
+           margin-bottom:1rem;
+         }
+         #faculty_dept .banner {
+            margin-bottom:1rem;
+
+
+
+         }
+
+
+
+
 
 
   }
