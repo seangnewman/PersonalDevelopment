@@ -212,6 +212,10 @@ body {
   background-image: url("../../resources/images/jump-photo.png");
 }
 
+#brooklynLocation {
+  background-image: url("../../resources/images/map.jpg");
+}
+
 .bottom_section {
   height: 20.125rem;
   width:100%;
@@ -484,12 +488,68 @@ body {
 
 }
 
+#aboutPYTDance{
+    background-image: url("../../resources/images/workout-photo.png");
+}
+
+.r_danceStyles{
+  background-color: #f2f2f2;
+
+}
+
+.r_danceStyles{
+  background-color: #ffffff;
+}
+.danceStylesContainer{
+
+  height: 26rem;
+  width:62%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  color:black;
+  padding:4rem 19% 4rem 19%;
+}
+
+.danceStyleImgContainer {
+  width: 15%;
+  height:auto;
+  margin-right: 5rem;
+
+}
+.danceStyleImgContainer img{
+  height: 9.375rem;
+  width: auto;
+  display: inline;
+  margin-top:4rem;
+
+}
+
+.danceStyleTextContainer {
+  width: 65%;
+  height: auto;
+  margin-right: 5rem;
 
 
+}
 
 
+.danceStyleBanner{
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgba(174,75,227,0.9);
+  margin-bottom: 1.5rem;
+}
+
+.danceStyleText {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align:justify;
 
 
+}
 
 @media only screen and (min-width:760px) and (max-width:1024px) {
   html{
@@ -869,22 +929,15 @@ body {
 
            text-align: left;
            padding: .625rem .625rem 0 .625rem;
-
-
-
          }
 
          .main_faculty_banner{
-
            text-align: center;
            width: 70%;
            margin-bottom: 0;
-
-
          }
 
          .main_faculty_banner p{
-
            margin-top: 0;
            width: 90%;
 
@@ -895,9 +948,6 @@ body {
          }
          #faculty_dept .banner {
             margin-bottom:1rem;
-
-
-
          }
 
 
