@@ -95,12 +95,18 @@ body {
 }
 
 
+.active_page a{
+  color: orange;
+}
+
+
+
 .top_section {
   height: 38.125rem;
   width:auto;
   background-image: url("../../resources/images/dancers-photo.png");
   background-size: 100% 100%;
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
   margin: 0 auto;
   text-align: center;
 }
@@ -112,7 +118,7 @@ body {
 
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 2rem;
+  /*padding-bottom: 2rem;*/
   border-bottom: 0.5rem  rgb(174, 75, 227) solid;
 
 }
@@ -492,43 +498,65 @@ body {
     background-image: url("../../resources/images/workout-photo.png");
 }
 
-.r_danceStyles{
+.l_danceStyles{
   background-color: #f2f2f2;
-
+  margin-bottom: 4rem;
 }
 
 .r_danceStyles{
   background-color: #ffffff;
+  margin-bottom: 4rem;
 }
+
+
+
+
 .danceStylesContainer{
 
   height: 26rem;
   width:62%;
   text-align: center;
-  display: flex;
-  justify-content: flex-start;
+  display: inline;
+/*  justify-content: flex-start;
   align-items: flex-start;
-  align-content: flex-start;
+  align-content: flex-start;*/
   color:black;
   padding:4rem 19% 4rem 19%;
+
+  position: relative;
 }
 
 .danceStyleImgContainer {
   width: 15%;
-  height:auto;
+  height:100%;
   margin-right: 5rem;
 
 }
+
+.r_danceStyles .danceStyleImgContainer {
+  float:right;
+}
+.l_danceStyles .danceStyleImgContainer {
+  float:left;
+}
+
+
+
 .danceStyleImgContainer img{
   height: 9.375rem;
   width: auto;
   display: inline;
   margin-top:4rem;
 
-}
 
+}
+/*
+#chrysler {
+  height: 18.750rem;
+}
+*/
 .danceStyleTextContainer {
-  width: 65%;
+  width: 80%;
   height: auto;
   margin-right: 5rem;
 
@@ -689,6 +717,83 @@ body {
      font-size: 1.125rem;
      width:100%;
      height:auto;
+
+   }
+
+   #aboutPTYDanceText .banner {
+     font-size: 1.25rem;
+     font-weight: bold;
+     color:#794ae2;
+   }
+
+   #aboutPTYDanceText .sub_banner {
+     font-size: 1rem;
+     line-height: 1.6;
+     margin: 0 auto;
+   }
+
+   .danceStyleBanner{
+     font-size: :1.75rem;
+     margin: 0 auto;
+     padding-bottom:1rem;
+   }
+
+   .danceStyleText{
+     font-size: 1rem;
+     line-height: 1.6;
+     margin: 0 auto;
+     display:block;
+     height: auto;
+   }
+   .danceStyleImgContainer img{
+     height: 6.25rem;
+     width: auto;
+     margin: 0 auto;
+   }
+
+   .danceStylesContainer{
+
+     display: block;
+     flex-direction: column;
+     margin 0;
+
+     padding:1.875rem 19% 1.875rem 19%;
+
+   }
+   .r_danceStyles{
+     padding:0;
+   }
+
+   .l_danceStyles{
+     padding:0;
+   }
+
+   .r_danceStyles .danceStyleImgContainer {
+     float:none;
+     height: auto;
+     margin:0 auto;
+   }
+   .l_danceStyles .danceStyleImgContainer {
+     float:none;
+     height: auto;
+     margin:0 auto;
+   }
+
+   .danceStyleTextContainer{
+     margin:0 auto;
+     width: 85%;
+     height: auto%;
+     display: table;
+
+
+   }
+
+.danceStyleText{
+  display:table-row;
+}
+   .danceStyleImgContainer img{
+     margin-bottom: 1rem;
+
 
    }
 
@@ -948,6 +1053,82 @@ body {
          }
          #faculty_dept .banner {
             margin-bottom:1rem;
+         }
+         #aboutPTYDanceText .banner {
+           font-size: 1.25rem;
+           font-weight: bold;
+           color:#794ae2;
+         }
+
+         #aboutPTYDanceText .sub_banner {
+           font-size: 1rem;
+           line-height: 1.6;
+           margin: 0 auto;
+         }
+
+         .danceStyleBanner{
+           font-size: :1.75rem;
+           margin: 0 auto;
+           padding-bottom:1rem;
+         }
+
+         .danceStyleText{
+           font-size: 1rem;
+           line-height: 1.6;
+           margin: 0 auto;
+         }
+         .danceStyleImgContainer img{
+           height: 6.25rem;
+           width: auto;
+           margin: 0 auto;
+         }
+
+         .danceStylesContainer{
+
+           display: block;
+           flex-direction: column;
+           margin 0;
+
+           padding:1.875rem 19% 1.875rem 19%;
+
+         }
+         .r_danceStyles{
+           padding:0;
+           height: auto;
+         }
+
+         .l_danceStyles{
+           padding:0;
+           height: auto;
+         }
+
+         .r_danceStyles .danceStyleImgContainer {
+           float:none;
+           height: auto;
+           margin:0 auto;
+         }
+         .l_danceStyles .danceStyleImgContainer {
+           float:none;
+           height: auto;
+           margin:0 auto;
+         }
+
+         .danceStyleTextContainer{
+           margin:0 auto;
+           width: 85%;
+           height:auto;
+           display:table;
+
+         }
+
+         .danceStyleImgContainer img{
+           margin-bottom: 1rem;
+
+
+         }
+
+         .danceStyleText{
+           display:table-row;
          }
 
 
