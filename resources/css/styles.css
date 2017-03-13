@@ -1,4 +1,1139 @@
-body {
-  margin: 0 auto;
-  width: 960px;
+
+
+html {
+ font-family: 'Roboto', sans-serif;
+ font-size: 16px;
+ color:#ffffff;
 }
+
+body {
+
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.top_navigation {
+  opacity: .90;
+
+}
+.bottom_navigation {
+  opacity: .30;
+  color:#ffffff;
+
+}
+
+.top_navigation .nav_logo {
+  height: 3.875rem;
+}
+
+.bottom_navigation .nav_logo {
+  height: 3.125rem;
+
+
+}
+
+.nav_logo {
+
+  width: :100%;
+  background-color: #000000;
+  padding-left: 3.6875rem;
+  padding-right: 3.4375rem;
+  vertical-align: top;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.bottom_section .nav_logo .navigation li a{
+  color:white;
+}
+
+
+
+
+.logo_container{
+  width: 8rem;
+  height:50px;
+  display:flex;
+}
+
+.logo {
+  background-image: url("../../resources/images/logo-color.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  width: 200px;
+  height: 50px;
+
+
+}
+
+.navigation {
+  align-content: right;
+  justify-content: right;
+  text-align: right;
+}
+
+.navigation ul {
+  justify-content: space-between;
+}
+
+.navigation li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 1rem;
+  padding-right: 2rem;
+}
+
+.navigation a {
+  font-family: 'Open Sans' sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color:#ffffff;
+  text-decoration: none;
+}
+
+
+.active_page a{
+  color: orange;
+}
+
+
+
+.top_section {
+  height: 38.125rem;
+  width:auto;
+  background-image: url("../../resources/images/dancers-photo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.top_section_classes {
+  height: 43.125rem;
+  width:auto;
+
+  margin: 0 auto;
+  text-align: center;
+  /*padding-bottom: 2rem;*/
+  border-bottom: 0.5rem  rgb(174, 75, 227) solid;
+
+}
+
+
+
+.main_banner .banner{
+  font-size: 3.125rem;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 9.4375rem;
+  text-transform: uppercase;
+  padding-bottom: 2.6875rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main_banner .sub_banner {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-bottom: 5rem;
+}
+
+.main_banner {
+  width:45rem;
+  margin: 0 auto;
+}
+
+.button {
+  border-radius: 2px;
+  background-color: #f5a623;
+  font-family: 'Open Sans' sans-serif;;
+  font-size: 1.375rem;
+  font-weight: bold;
+  color:#ffffff;
+  padding: : 1.25rem 3.125rem;
+}
+
+.button a{
+  color:#ffffff;
+  text-decoration: none;
+
+}
+
+.body_section {
+  height: 31.25rem;
+  width:auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.body_section .programs {
+  width: 25rem;
+  height:20rem;
+  margin-top: 11.125rem;
+  float: right;
+}
+.program_content{
+  margin: 3rem;
+}
+
+.program_heading{
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.program_body {
+  margin-bottom: 1.25rem;
+  font-size:1.125rem;
+  line-height: 1.4;
+}
+
+.program_blog{
+  font-weight: bold;
+  font-size:1.125rem;
+}
+
+
+#program1, #program3 {
+  background-color: rgba(120,73,225,0.9);
+}
+
+#program2 {
+  background-color: rgba(173,74,226,0.9);
+}
+
+#graffiti {
+  background-image: url("../../resources/images/graffiti-photo.png");
+}
+
+#fire {
+  background-image: url("../../resources/images/fire-photo.png");
+}
+
+#jump {
+  background-image: url("../../resources/images/jump-photo.png");
+}
+
+#brooklynLocation {
+  background-image: url("../../resources/images/map.jpg");
+}
+
+.bottom_section {
+  height: 20.125rem;
+  width:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../resources/images/party-photo.png");
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color:#f00000;
+}
+
+.bottom_section .social_media{
+ width:9.375rem;
+
+ display: flex;
+ justify-content: space-between;
+
+
+}
+
+.bottom_section .social_media a{
+  text-decoration: none;
+   color:#ffffff;
+}
+
+
+
+.bottom_section .social_media i{
+  margin-top: 0.5rem;
+}
+
+.bottom_section .contact {
+  padding-top: 5rem;
+  font-size: .875rem;
+  letter-spacing: 0.7px;
+  color:#ffffff;
+}
+
+.bottom_section .contact p{
+  padding: 0.875rem 0;
+}
+
+.pyt_contact_info {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.pyt_contact p{
+  display:inline-flex;
+
+}
+
+.pyt_contact_info #pyt_break, .pyt_contact_info #constant_break{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.top_section_container{
+
+}
+
+.classes_img {
+  width:45%;
+  height: 100%;
+  background-image: url("../../resources/images/classes-photo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  float: left;
+}
+
+.classes_text{
+  width:45%;
+  height: 100%;
+  float: right;
+  color:black;
+  margin: 0 auto;
+}
+
+.classes_text .banner{
+  font-size: 3.125rem;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 14.4375rem;
+  text-transform: uppercase;
+  padding-bottom: 2.6875rem;
+  font-family: 'Roboto', sans-serif;
+  color:rgba(174,75,227,0.9);
+  width:85%;
+}
+
+.classes_text .sub_banner {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-bottom: 5rem;
+  width:85%;
+
+}
+
+
+.classes_section {
+  height: 31.25rem;
+  width:auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color:black;
+
+}
+
+.classes_container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color:black;
+  padding: 1.5625rem 1.125rem 2.4rem 1.125rem;
+
+}
+
+.classTime {
+  width:25rem;
+  display:inline-block;
+
+}
+
+.classTime .className {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgba(174,75,227,0.9);
+  margin-bottom: 1.125rem;
+  margin-top:3.75rem;
+
+}
+
+.classTime .DaysTimesOfWeek {
+  margin-bottom: 1.125rem;
+}
+
+.classTime .DaysTimesOfWeek #DayOfWeek{
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.classTime .DaysTimesOfWeek #Times{
+  font-size: 1rem;
+  line-height: 1.5;
+  color:#000000;
+}
+
+.classTime p{
+  font-size:.875rem;
+  line-height: 1.7;
+
+}
+
+#faculty_dept{
+    background-image: url("../../resources/images/faculty-photo.png");
+    color:#999999;
+    margin: 0 auto;
+    padding-left:20rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.5rem #8a54ff solid;
+}
+
+#faculty_dept .banner{
+    color:rgba(174,75,227,0.9);
+    margin-bottom: 2rem;
+}
+
+#faculty_dept .sub_banner{
+
+}
+
+.faculty_section {
+  height: auto;
+  width:100%;
+  background-size: 100% 100%;
+
+  color:black;
+
+}
+
+.facultyContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content:center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color:black;
+  padding: 1.5625rem 0.5625rem 1.35rem 0.5625rem;
+  margin-top: 5.625;
+  margin-bottom: 11.25rem;
+
+}
+
+.facultyMembers {
+  width:16.875rem;
+  height: auto;
+  display:inline-block;
+  margin-top: 6.25rem;
+
+}
+
+.facultyImage{
+
+
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 16.875rem;
+}
+
+#johnny{
+  background-image: url("../../resources/images/faculty/johnny.png");
+}
+#aaron{
+  background-image: url("../../resources/images/faculty/aaron.png");
+}
+#ann{
+  background-image: url("../../resources/images/faculty/ann.png");
+}
+#ella{
+  background-image: url("../../resources/images/faculty/ella.png");
+}
+#eva{
+  background-image: url("../../resources/images/faculty/eva.png");
+}
+#gary{
+  background-image: url("../../resources/images/faculty/gary.png");
+}
+#helena{
+  background-image: url("../../resources/images/faculty/helena.png");
+}
+#luella{
+  background-image: url("../../resources/images/faculty/luella.png");
+}
+#noah{
+  background-image: url("../../resources/images/faculty/noah.png");
+}
+
+
+.facultyBio{
+
+  text-align: center;
+}
+
+
+.facultyName {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgba(174,75,227,0.9);
+  margin-bottom: .625rem;
+  margin-top:1.25rem;
+}
+.facultyRole{
+  padding-bottom: .625rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+#facultysDescription{
+  font-size:1rem;
+  line-height: 1.5;
+
+}
+
+#aboutPYTDance{
+    background-image: url("../../resources/images/workout-photo.png");
+}
+
+.l_danceStyles{
+  background-color: #f2f2f2;
+  margin-bottom: 4rem;
+}
+
+.r_danceStyles{
+  background-color: #ffffff;
+  margin-bottom: 4rem;
+}
+
+
+
+
+.danceStylesContainer{
+
+  height: 26rem;
+  width:62%;
+  text-align: center;
+  display: inline;
+/*  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;*/
+  color:black;
+  padding:4rem 19% 4rem 19%;
+
+  position: relative;
+}
+
+.danceStyleImgContainer {
+  width: 15%;
+  height:100%;
+  margin-right: 5rem;
+
+}
+
+.r_danceStyles .danceStyleImgContainer {
+  float:right;
+}
+.l_danceStyles .danceStyleImgContainer {
+  float:left;
+}
+
+
+
+.danceStyleImgContainer img{
+  height: 9.375rem;
+  width: auto;
+  display: inline;
+  margin-top:4rem;
+
+
+}
+/*
+#chrysler {
+  height: 18.750rem;
+}
+*/
+.danceStyleTextContainer {
+  width: 80%;
+  height: auto;
+  margin-right: 5rem;
+
+
+}
+
+
+.danceStyleBanner{
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: rgba(174,75,227,0.9);
+  margin-bottom: 1.5rem;
+}
+
+.danceStyleText {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align:justify;
+
+
+}
+
+@media only screen and (min-width:760px) and (max-width:1024px) {
+  html{
+  }
+  .main_banner {
+    width:31.25rem;
+  }
+
+  body {
+
+    width: 100vw;
+
+  }
+  .body_section .programs {
+    width: 100%;
+    height:12.1875rem;
+    margin-top: 19.0625rem;
+  }
+
+  .program_content{
+    margin: 1.875rem 3.4375rem 1.875rem 1.875rem;
+  }
+
+  .program_heading{
+    font-size: 1.875rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+  }
+
+  .program_body {
+    margin-bottom: 0.625rem;
+    font-size:1rem;
+    line-height: 1.5;
+  }
+ .bottom_navigation .nav_logo .logo, .bottom_navigation .navigation{
+   display:none;
+ }
+
+ .bottom_section .social_media{
+  width:5.4375rem;
+
+  display: flex;
+  justify-content: space-between;
+   align-content: center;
+   margin: 0 auto;
+
+ }
+
+ .bottom_section {
+   height: 11.25rem;
+   margin: 0 auto;
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+ }
+
+ .bottom_navigation .nav_logo {
+   height: 2.5rem;
+ }
+
+ .bottom_navigation .social_media .fa{
+   font-size: 1rem;
+ }
+ .pyt_contact_info {
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+ }
+
+ .pyt_contact_info #pyt_break{
+   display:none
+ }
+ .bottom_section .contact {
+   padding-top: 1.875rem;
+   font-size: .625rem;
+   letter-spacing: 0.5px;
+   line-height: .5rem;
+ }
+
+
+ .classTime .className {
+
+   margin-top:2.25rem;
+
+ }
+
+
+ .classTime {
+   width:18.75rem;
+   display:inline-block;
+
+ }
+
+ .classTime .DaysTimesOfWeek #Times{
+   font-size: 1.125rem;
+   }
+   .classTime p{
+
+     line-height: 1.5;
+
+   }
+   .top_section_container{
+     display:block;
+     flex-direction: column;
+     justify-content: center;
+
+   }
+
+   .classes_img {
+     width:100%;
+     height: 75%;
+     background-size: 100% 100%;
+   }
+
+   .classes_text{
+     width:100%;
+     height: 20%;
+
+     text-align: center;
+
+   }
+
+
+   .classes_text .banner{
+     font-size: 1.75rem;
+     padding-top: 2rem;
+     text-transform: uppercase;
+     padding-bottom: 2rem;
+     font-family: 'Roboto', sans-serif;
+     color:rgba(174,75,227,0.9);
+     width:100%;
+
+   }
+
+   .classes_text .sub_banner {
+     margin-bottom: 1rem;
+     font-size: 1.125rem;
+     width:100%;
+     height:auto;
+
+   }
+
+   #aboutPTYDanceText .banner {
+     font-size: 1.25rem;
+     font-weight: bold;
+     color:#794ae2;
+   }
+
+   #aboutPTYDanceText .sub_banner {
+     font-size: 1rem;
+     line-height: 1.6;
+     margin: 0 auto;
+   }
+
+   .danceStyleBanner{
+     font-size: :1.75rem;
+     margin: 0 auto;
+     padding-bottom:1rem;
+   }
+
+   .danceStyleText{
+     font-size: 1rem;
+     line-height: 1.6;
+     margin: 0 auto;
+     display:block;
+     height: auto;
+   }
+   .danceStyleImgContainer img{
+     height: 6.25rem;
+     width: auto;
+     margin: 0 auto;
+   }
+
+   .danceStylesContainer{
+
+     display: block;
+     flex-direction: column;
+     margin 0;
+
+     padding:1.875rem 19% 1.875rem 19%;
+
+   }
+   .r_danceStyles{
+     padding:0;
+   }
+
+   .l_danceStyles{
+     padding:0;
+   }
+
+   .r_danceStyles .danceStyleImgContainer {
+     float:none;
+     height: auto;
+     margin:0 auto;
+   }
+   .l_danceStyles .danceStyleImgContainer {
+     float:none;
+     height: auto;
+     margin:0 auto;
+   }
+
+   .danceStyleTextContainer{
+     margin:0 auto;
+     width: 85%;
+     height: auto%;
+     display: table;
+
+
+   }
+
+.danceStyleText{
+  display:table-row;
+}
+   .danceStyleImgContainer img{
+     margin-bottom: 1rem;
+
+
+   }
+
+
+}
+
+@media only screen and (max-width:759px) {
+  html{
+
+  }
+
+  body {
+
+    width: 100vw;
+
+  }
+  .main_banner {
+    width:18.5rem;
+  }
+
+  .top_navigation .nav_logo {
+    height: 2.5rem;
+  }
+
+
+  .logo {
+    height: 32px;
+
+  }
+  .nav_logo {
+
+    width: :100%;
+    background-color: #000000;
+    padding-left: .625rem;
+    padding-right:.625rem;
+      }
+  .logo {
+        background-image: url("../../resources/images/logo-mobile.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width:3rem;
+        height: 2.5rem;
+      }
+
+      .navigation a {
+        font-family: 'Open Sans' sans-serif;
+        font-size: 0.75rem;
+        font-weight: bold;
+        color:#ffffff;
+        text-decoration: none;
+      }
+      .navigation li {
+        padding-top: 0.5rem;
+      }
+
+
+      .main_banner .banner{
+        font-size: 1.875rem;
+        padding-top: 7.125rem;
+        text-transform: uppercase;
+        padding-bottom: 1.625rem;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .main_banner .sub_banner {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding-bottom: 3.875rem;
+      }
+
+      .main_banner {
+        width:18.5rem;
+        margin: 0 auto;
+      }
+      .body_section .programs {
+        width: 100%;
+        height:12.1875rem;
+        margin-top: 19.0625rem;
+      }
+
+      .program_content{
+        margin: 1.875rem 1.25rem 1.875rem 1.25rem;
+      }
+
+      .program_heading{
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 0.625rem;
+      }
+
+      .program_body {
+        margin-bottom: 0.625rem;
+        font-size:1rem;
+        line-height: 1.5;
+      }
+
+      .program_blog{
+        font-size: 1rem;
+      }
+
+      .bottom_navigation .nav_logo .logo, .bottom_navigation .navigation{
+       display:none;
+      }
+
+      .bottom_section .social_media{
+      width:5.4375rem;
+
+      display: flex;
+      justify-content: space-between;
+       align-content: center;
+       margin: 0 auto;
+
+      }
+
+      .bottom_section {
+       height: 11.25rem;
+       margin: 0 auto;
+       text-align: center;
+       font-family: 'Roboto', sans-serif;
+      }
+
+      .bottom_navigation .nav_logo {
+       height: 2.5rem;
+      }
+
+      .bottom_navigation .social_media .fa{
+       font-size: 1rem;
+      }
+      .pyt_contact_info {
+       flex-direction: column;
+       align-items: center;
+       margin: 0 auto;
+      }
+
+      .pyt_contact_info #pyt_break{
+       display:none
+      }
+      .bottom_section .contact {
+       padding-top: 1.875rem;
+       font-size: .625rem;
+       letter-spacing: 0.5px;
+       line-height: .5rem;
+      }
+
+      .top_section_container{
+        display:block;
+        flex-direction: column;
+        justify-content: center;
+
+
+      }
+
+      .classes_img {
+        width:100%;
+        height: 75%;
+        background-size: 100% 100%;
+      }
+
+      .classes_text{
+        width:100%;
+        height: 20%;
+
+        text-align: center;
+
+      }
+
+
+      .classes_text .banner{
+        font-size: 1.75rem;
+        padding-top: 2rem;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+        font-family: 'Roboto', sans-serif;
+        color:rgba(174,75,227,0.9);
+        width:100%;
+
+      }
+
+      .classes_text .sub_banner {
+        padding-bottom: 1rem;
+        font-size: 1.125rem;
+        width:100%;
+        height:auto;
+
+      }
+
+
+      .classes_section {
+      }
+
+       .classTime {
+         width:17.5em;
+         display:inline-block;
+         margin: 0 auto;
+
+       }
+
+
+       .classTime .className {
+
+         margin-top:2.5rem;
+
+       }
+
+
+       .classTime {
+         width:17.5rem;
+         display:inline-block;
+
+       }
+
+       .classTime .DaysTimesOfWeek #Times{
+         font-size: 0.875rem;
+         line-height: 1.7;
+         }
+
+         .classTime p{
+           font-size: 0.875rem;
+           line-height: 1.7;
+         }
+
+
+         .facultyName {
+           font-size: 1.5rem;
+          }
+         .facultyRole{
+           font-size: 1rem;
+         }
+
+         #facultysDescription {
+           font-size:.875rem;
+           line-height: 1.7;
+         }
+
+         #faculty_dept{
+           margin:0;
+
+           text-align: left;
+           padding: .625rem .625rem 0 .625rem;
+         }
+
+         .main_faculty_banner{
+           text-align: center;
+           width: 70%;
+           margin-bottom: 0;
+         }
+
+         .main_faculty_banner p{
+           margin-top: 0;
+           width: 90%;
+
+         }
+         #falculty_banner{
+           margin-top:15rem;
+           margin-bottom:1rem;
+         }
+         #faculty_dept .banner {
+            margin-bottom:1rem;
+         }
+         #aboutPTYDanceText .banner {
+           font-size: 1.25rem;
+           font-weight: bold;
+           color:#794ae2;
+         }
+
+         #aboutPTYDanceText .sub_banner {
+           font-size: 1rem;
+           line-height: 1.6;
+           margin: 0 auto;
+         }
+
+         .danceStyleBanner{
+           font-size: :1.75rem;
+           margin: 0 auto;
+           padding-bottom:1rem;
+         }
+
+         .danceStyleText{
+           font-size: 1rem;
+           line-height: 1.6;
+           margin: 0 auto;
+         }
+         .danceStyleImgContainer img{
+           height: 6.25rem;
+           width: auto;
+           margin: 0 auto;
+         }
+
+         .danceStylesContainer{
+
+           display: block;
+           flex-direction: column;
+           margin 0;
+
+           padding:1.875rem 19% 1.875rem 19%;
+
+         }
+         .r_danceStyles{
+           padding:0;
+           height: auto;
+         }
+
+         .l_danceStyles{
+           padding:0;
+           height: auto;
+         }
+
+         .r_danceStyles .danceStyleImgContainer {
+           float:none;
+           height: auto;
+           margin:0 auto;
+         }
+         .l_danceStyles .danceStyleImgContainer {
+           float:none;
+           height: auto;
+           margin:0 auto;
+         }
+
+         .danceStyleTextContainer{
+           margin:0 auto;
+           width: 85%;
+           height:auto;
+           display:table;
+
+         }
+
+         .danceStyleImgContainer img{
+           margin-bottom: 1rem;
+
+
+         }
+
+         .danceStyleText{
+           display:table-row;
+         }
+
+
+
+
+
+
+  }
