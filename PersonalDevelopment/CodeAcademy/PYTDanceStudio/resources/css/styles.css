@@ -290,7 +290,7 @@ body {
   width:45%;
   height: 100%;
   background-image: url("../../resources/images/classes-photo.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 0 auto;
   float: left;
@@ -527,7 +527,7 @@ body {
 }
 
 .danceStyleImgContainer {
-  width: 15%;
+  width: auto;
   height:100%;
   margin-right: 5rem;
 
@@ -535,9 +535,11 @@ body {
 
 .r_danceStyles .danceStyleImgContainer {
   float:right;
+  height:100%;
 }
 .l_danceStyles .danceStyleImgContainer {
   float:left;
+  height:100%;
 }
 
 
@@ -545,7 +547,7 @@ body {
 .danceStyleImgContainer img{
   height: 9.375rem;
   width: auto;
-  display: inline;
+  display: inline-block;
   margin-top:4rem;
 
 
@@ -556,7 +558,7 @@ body {
 }
 */
 .danceStyleTextContainer {
-  width: 80%;
+  width: 85%;
   height: auto;
   margin-right: 5rem;
 
@@ -575,6 +577,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.5;
   text-align:justify;
+  width:70%;
 
 
 }
@@ -783,13 +786,20 @@ body {
      margin:0 auto;
      width: 85%;
      height: auto%;
-     display: table;
+     min-width: 100%;
+     overflow: auto;
+
 
 
    }
 
 .danceStyleText{
-  display:table-row;
+  width: 85%;
+  height:auto;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: auto;
+
 }
    .danceStyleImgContainer img{
      margin-bottom: 1rem;
@@ -943,6 +953,10 @@ body {
         display:block;
         flex-direction: column;
         justify-content: center;
+        overflow:hidden;
+        min-height: 100%;
+        min-width: 100%;
+        width:100%;
 
 
       }
@@ -1054,6 +1068,8 @@ body {
          #faculty_dept .banner {
             margin-bottom:1rem;
          }
+
+
          #aboutPTYDanceText .banner {
            font-size: 1.25rem;
            font-weight: bold;
@@ -1064,6 +1080,10 @@ body {
            font-size: 1rem;
            line-height: 1.6;
            margin: 0 auto;
+           min-height: 100%;
+           min-width: 100%;
+           width: 100%
+           overflow: hidden;;
          }
 
          .danceStyleBanner{
@@ -1085,7 +1105,7 @@ body {
 
          .danceStylesContainer{
 
-           display: block;
+           display: inline-block;
            flex-direction: column;
            margin 0;
 
@@ -1095,11 +1115,21 @@ body {
          .r_danceStyles{
            padding:0;
            height: auto;
+           min-height: : 100%;
+           min-width: 100%;
+           overflow:hidden;;
+           display:block;
+
          }
 
          .l_danceStyles{
            padding:0;
            height: auto;
+           min-height: : 100%
+           min-width: 100%;
+           overflow:hidden;;
+           display:block;
+
          }
 
          .r_danceStyles .danceStyleImgContainer {
@@ -1117,7 +1147,12 @@ body {
            margin:0 auto;
            width: 85%;
            height:auto;
-           display:table;
+           min-height: 100%;
+           min-width: 100%;
+
+           overflow: hidden;;
+
+
 
          }
 
@@ -1128,7 +1163,13 @@ body {
          }
 
          .danceStyleText{
-           display:table-row;
+           width: 85%;
+           height:auto;
+           min-height: 100%;
+           min-width: 100%
+           overflow: hidden;;
+
+
          }
 
 
