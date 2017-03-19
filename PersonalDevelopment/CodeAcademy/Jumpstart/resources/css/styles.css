@@ -1,20 +1,206 @@
-html{
-  font-size: 14px;
-  font-family: 'Open Sans' sans-serif;
+1366pxhtml{
 
-}
-body {
-  width: 80vw;
+  width: 1366px;
+  font-size: 14px;
   margin: 0 auto;
 }
-.jumbotron{
-  height: 30rem;
-  background-color: #F7E1A8;
-  color:white;
+body {
+  width: 1366px;
+  font-size: 14px;
+  margin: 0 auto;
+  font-family: 'Open Sans';
 }
 
-.jumbotron .jumbotron-fluid .banner{
-  font-family: 'Monoton';
-  font-size: 7.1rem;
 
+
+nav{
+  height: 50px;
+  align-content: center;
+  vertical-align: middle;
+  margin: 0 15px;
+  width: 1366px;
+  margin: 0 auto;
+  position: absolute;
+}
+
+
+nav img{
+  float:right;
+  margin:1rem;
+
+}
+
+.active a{
+  color:#399bd1 !important;
+  background-color: #f8f8f8 !important;
+}
+
+
+
+.jumbotron, .jumbotron-fluid, .get-going{
+  height: 50rem;
+  width: 100%;
+  background-color: #F7E1A8;
+  background-image: url("../../resources/images/jumbotron.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  /*position: absolute; */
+  width: 1366px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 11.85rem;
+  padding-bottom: 11.85rem;
+}
+
+.banner{
+  position: relative;
+  margin-top: 11.85rem;
+  margin-bottom: 11.85rem;
+  align-items: center;
+  text-align: center;
+  width:51.3rem;
+}
+
+.getgoing-banner{
+ font-family: 'Monoton';
+ font-size: 7.1rem !important;
+ color:white;
+ width: auto;
+ height: auto;
+}
+
+.jumpstart-banner{
+
+  font-size:1.5rem;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.8rem;
+
+}
+
+.featuredProducts-container{
+  margin: 0 auto;
+
+}
+
+.featuredProduct-banner{
+  font-size: 1.7rem;
+  color: #399bd1;
+  font-weight: bold;
+
+  margin: 20px 0;
+}
+
+
+.featured_image {
+  margin:0 auto;
+}
+.featured_image {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.jumbotron .btn{
+  color:white;
+  width: 11.4rem;
+  padding: 1.3rem 0 1.3rem 0;
+  margin-bottom: 11.4rem;
+
+}
+
+.jumbotron .btn-link {
+  background-color: #399bd1;
+}
+
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.product-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+
+}
+
+
+.product-categories{
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #399bd1;
+}
+
+.product-categories ul li {
+  line-height: 1.4;
+  color:rgba(0,0,0,0.7);
+}
+
+.project-desc{
+  margin:0 2rem 0 0 ;
+}
+
+.products-container {
+  margin-bottom: 5.85rem;
+
+  padding: 0;
+}
+
+.idea-container{
+
+  width: 1366px;
+  margin: 5.85rem 0 5.2rem 0;
+
+}
+
+.ideas{
+   
+   justify-content: center;
+   align-content:  center;
+   margin: 0 auto;
+   width: 1366px;
+   position: absolute;
+}
+
+.ideas-text{
+
+  margin-bottom: 5.2rem;
+  width: 50rem;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  margin 0 auto;
+}
+
+.idea-banner{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 5.2rem 0 1.4rem 0;
+}
+
+.learnmore-container{
+  margin-top: 2rem;
+  margin-bottom: 5.2rem;
+}
+
+.learnmore-container .btn{
+  color:white;
+  width: 11.4rem;
+  padding: 1.3rem 0 1.3rem 0;
+  margin-bottom: 11.4rem;
+
+}
+
+.learnmore-container .btn-link {
+  background-color: #399bd1;
 }
