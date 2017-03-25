@@ -1,0 +1,59 @@
+html {
+  background-color: black;
+}
+
+body {
+  background-color: white;
+  width: 55vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+
+.jumbotron {
+  background-image: url("../../resources/images/glasses-bg.png");
+  background-size: cover;
+  height: 50vh;
+  width: auto;
+}
+
+
+.main_content {
+  background-color: white;
+  padding: 3%;
+}
+
+.main_content {
+  width: 40vw;
+  margin: 0 auto;
+
+}
+
+.images_container {
+ display:flex;
+ justify-content: center;
+}
+
+.service_image {
+  height: 40%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.Philosophy_Appointments {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.col_title {
+  text-transform: uppercase;
+  background-color: #5E9EA0;
+  color: white;
+  width: 50%;
+}
+
+.columns {
+  width: 45%;
+
+}
