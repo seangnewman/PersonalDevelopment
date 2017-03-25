@@ -1,0 +1,660 @@
+html{
+   font-size: 16px;
+   font-family: 'Share Tech', sans-serif;
+   color:rgba(0,0,0,0.5);
+   width: 80vw;
+
+  background-color: #FFFFFF;
+   margin: 0 auto;
+}
+
+body {
+   background-color: #D7D7D7;
+
+}
+
+nav{
+   background-color: #FFFFFF;
+}
+
+
+.navbar-container{
+  height: 4rem;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;:
+  width: 100%;
+
+}
+
+.navigation_container{
+  float:right;
+
+}
+
+
+.logo_brand_container{
+  display:flex;
+     width: 30%;
+
+}
+
+.logo_container {
+  background-image: url("../../resources/images/ic-logo.svg");
+  height: 3.5rem;
+  min-height: 2rem;
+  width: 3.5rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: .5rem 0 0 1rem;
+
+
+  float:left;
+}
+
+
+.brand_container span{
+  color:rgba(0,0,0,1);
+  font-weight: bold;
+}
+
+.brand_container {
+  font-size: 2rem;
+  margin-top: 1rem;
+  line-height: 2.5rem;
+}
+
+.navigation_container{
+  font-size: 1.5rem;
+
+  line-height: 2.5rem;
+  margin-right: 1rem;
+
+  display:flex;
+}
+
+.navigationItem-container{
+  display: flex;
+   padding-top: .5rem;
+
+}
+
+.navigationItem{
+
+  display: inline-block;
+}
+
+nav a{
+
+  color:black;
+  text-decoration: none;
+}
+
+#onCampus, #onLine, #orCompanies {
+  width: 1rem;
+  height: 100%;
+  background: #92DFDF;
+  margin-top: 0;
+}
+
+
+
+.practice-learn-thesis-container{
+
+  display:flex;
+  width: 100%;
+  min-width: 100%;
+}
+
+.start-learning-container{
+
+  display:flex;
+  width: 100%;
+  min-width: 100%;
+  margin: 2rem 0;
+}
+
+
+.practice-learn-thesis-container .left-column{
+  width: 60%;
+  height: auto;
+  max-width: 60%;
+  margin: 2rem 1.5rem;
+  display: inline-flex;
+}
+
+
+.practice-learn-thesis-container .left-column img{
+  width: 100%;
+  height: auto;
+}
+
+.practice-learn-thesis-container .right-column{
+  width: 40%;
+  height: auto;
+  margin: 2rem 0  2rem 2.5rem;
+  display: flex;
+  text-align: left;;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;;
+}
+
+#learnSomething{
+  justify-content: center;
+}
+
+.right-column-container{
+    width: 100%;
+
+}
+
+.right-column a{
+  color:white;
+  text-decoration: none;
+}
+
+.learn-banner{
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.learn-text{
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.start_btn{
+  background-color: #4C4C4C;
+  color:white;
+  padding: .5rem 0;
+  width:80%;
+  font-size: 1.75rem;
+  border: none;
+}
+
+.practice-learn-thesis #keepPracticing{
+  background-color: #F3F5F5;
+
+}
+
+.information-banner{
+  margin-top:2rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.information-text{
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-family: 'Petit Formal Script', cursive;
+  font-weight: bold;
+  color:black;
+}
+
+.information-quote{
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.orientation-container{
+
+    width: 100%;
+
+    display:flex;
+
+}
+
+#pleaseWork{
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.right-column{
+
+}
+
+.practice-right-container{
+  height: 15rem;
+  background-image: url("../../resources/images/information-orientation.jpg");
+  background-size: cover;;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  min-width: 35%;
+}
+
+#ourCampus{
+  background-image: url("../../resources/images/information-campus.jpg");
+}
+
+#guestLecture, #fisma_container{
+
+  background-color: #D7D7D7;
+}
+
+#specialGuest{
+    background-image: url("../../resources/images/information-guest-lecture.jpg");
+
+}
+
+
+
+
+
+.practice-text-container{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+
+   align-content: flex-start;
+
+
+
+}
+
+.practice-right-header{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.5ren;
+}
+
+.practice-right-dates{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.practice-right-more{
+  line-height: 2rem;
+  font-size: 1.75rem;
+
+}
+
+
+.practice-right-more a{
+  color: #4D8FDD;
+  text-decoration:  none;
+}
+
+.section_header_container{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  background-color: #F3F5F5;
+}
+
+#learning_header_container{
+  background-color: #D7D7D7;
+}
+
+
+.section_header{
+  font-size: 3rem;
+  padding-top: 2rem;
+
+}
+
+.information video{
+  width: 100%;
+  height: auto;
+
+}
+
+
+.practice-learn-thesis{
+
+}
+
+#fisma{
+
+  background-image: url("../../resources/images/thesis-fisma.jpg");
+}
+
+
+#nowAndThen{
+    background-image: url("../../resources/images/thesis-now-and-then.jpg");
+
+}
+
+.classSubjects{
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+}
+
+.class_container{
+  width:30%;
+  min-width: 30%;
+
+}
+
+.classImage{
+    background-image: url("../../resources/images/course-software.jpg");
+    width: auto;
+
+    height: auto;
+    min-height: 15rem;
+    background-size: cover;
+
+}
+
+#computerArt{
+    background-image: url("../../resources/images/course-computer-art.jpg");
+}
+
+#design{
+    background-image: url("../../resources/images/course-design.jpg");
+}
+
+#data{
+    background-image: url("../../resources/images/course-data.jpg");
+}
+
+#business{
+    background-image: url("../../resources/images/course-business.jpg");
+}
+
+#marketing{
+    background-image: url("../../resources/images/course-marketing.jpg");
+}
+
+
+
+
+
+.classTextContainer{
+  padding-top:1rem;
+  background-color: #F3F5F5;
+  text-align: left;
+  width:100%;
+  padding-bottom: 1.5rem;
+  min-height: 13rem;
+
+
+
+
+}
+
+.course_section{
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+
+.classTitle{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+
+}
+
+.staticCourse{
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+
+}
+
+.courseSubjects{
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.navFooter{
+  background-color: #F3F5F5;
+  padding-bottom: 4rem;
+
+
+}
+
+
+.footerBorder{
+  border-top: 0.25rem black solid;
+  margin: 0 1rem;
+}
+.footerTextContainer{
+  padding-top: 2rem;
+  margin: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+
+.footerTermsPrivacy ul li{
+   display: inline-block;
+   margin-left: 2rem;
+
+}
+
+.footerTermsPrivacy ul li a{
+   color: black;
+   text-decoration: none;
+
+}
+
+
+@media only screen and (max-width:1060px)
+ {
+   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  html{
+    width: 100%;
+  }
+
+
+  .navigationItem-container, .brand_container, .practice-learn-thesis-container .left-column {
+    display:none;
+  }
+
+
+  .practice-learn-thesis-container .right-column{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .practice-right-container{
+
+    min-width:100%;
+    height: 20rem;
+    background-size: 100% 100%;
+
+  margin: 0;
+  padding: 0;
+  }
+
+  .orientation-container{
+  display:flex;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+
+  }
+
+  #guestLecture{
+    background-color: #F3F5F5;
+  }
+ .classImage, .staticCourse, .courseSubjects{
+   display:none;
+ }
+
+ .classSubjects{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+
+
+ .start-learning-container{
+
+  background-color: #F3F5F5;
+   margin: 0 0;
+ }
+
+
+ .section_header{
+   background-color: #F3F5F5;
+ }
+
+ .practice-learn-thesis-container .right-column{
+   width: 100%;
+   height: auto;
+   margin: 0;
+}
+.class_container{
+  width:100%;
+  min-width: 100%;
+  background-color: #F3F5F5;
+}
+
+
+.classTextContainer{
+
+  min-height: auto;
+  height:auto;
+  padding:0;
+  margin:0;
+  background-color: #F3F5F5;
+
+
+
+
+}
+
+
+#orientation{
+   background-image: url("../../resources/images/information-orientation-mobile.jpg");
+}
+
+#ourCampus{
+   background-image: url("../../resources/images/information-campus-mobile.jpg");
+}
+
+#specialGuest{
+   background-image: url("../../resources/images/information-guest-lecture-mobile.jpg");
+}
+
+
+
+.classTitle{
+  background-color: #D7D7D7;
+  font-weight: bold;
+  height: auto;
+  margin-bottom: 1rem;
+}
+#thesisExhibits .practice-learn-thesis-container .left-column {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	margin: 0;
+	display: inline-flex;
+}
+
+#thesisExhibits .practice-learn-thesis-container .left-column{
+  display:flex;
+  flex-direction: column;
+
+  max-width:100%;
+
+}
+
+#thesisExhibits .practice-learn-thesis-container{
+  border: 2px red solid;
+  width: 100%;
+  max-width: 100%;
+}
+
+#thesisExhibits .information-text, #thesisExhibits .information-banner, #thesisExhibitsImages{
+  display:none;
+}
+
+.footerBorder, .footerTermsPrivacy{
+  display:none;
+}
+
+#onCampus{
+  background-image: url("../../resources/images/ic-on-campus.svg");
+  height: 3.5rem;
+  min-height: 2rem;
+  width: 3.5rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: .5rem 0 0 1rem;
+  background-color: inherit;
+
+
+  float:left;
+}
+
+#onLine{
+  background-image: url("../../resources/images/ic-online.svg");
+  height: 3.5rem;
+  min-height: 2rem;
+  width: 3.5rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: .5rem 0 0 1rem;
+  background-color: inherit;
+
+
+  float:left;
+}
+
+#signIn{
+  background-image: url("../../resources/images/ic-login.svg");
+  height: 3.5rem;
+  min-height: 2rem;
+  width: 3.5rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: .5rem 0 0 1rem;
+  background-color: inherit;
+
+
+  float:left;
+}
+
+.logo_brand_container{
+
+     width: 25%;
+
+}
+.navbar-container{
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+
+.navigation_container{
+  float:none;
+
+}
+.navigation_container{
+
+  margin-right: 1rem;
+  width: 75%;
+
+  display:flex;
+  justify-content: space-between;
+}
+
+
+ }
