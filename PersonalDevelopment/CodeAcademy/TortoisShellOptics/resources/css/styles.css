@@ -1,59 +1,311 @@
-html {
-  background-color: black;
-}
+html{
+  font-size: 18px;
+  font-family: Helvetica;
 
-body {
+}
+body{
+  width: 80vw;
   background-color: white;
-  width: 55vw;
-  height: 100vh;
+  color:black;
+
   margin: 0 auto;
 }
 
+.mainContent{
+  width:100%;
+  height: 30rem;
 
-.jumbotron {
+  display: flex;
+  justify-content: center;
   background-image: url("../../resources/images/glasses-bg.png");
   background-size: cover;
-  height: 50vh;
-  width: auto;
+
+
+}
+
+.mainContentContainer{
+  width:960px;
+  height: auto;
+
+  margin-top:1rem;
+  position: absolute;
+}
+
+.topNavigation_container{
+
+  background-color: cadetblue;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  color:white;
+
+
+}
+
+.logoBrand{
+
+  width:40%;
+  margin: 1rem 0 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo{
+  width: 4rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.logoContainer{
+  background-image: url("../../resources/images/logo-white.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 1.5rem;
+  width: 100%;
+}
+
+.navigationMenuContainer{
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navigationMenuContainer ul{
+  margin-top:1rem;
+}
+
+.navigationMenuContainer ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 2rem;
 }
 
 
-.main_content {
+.navigationMenuContainer ul li a{
+  color:white;
+  text-decoration: none;
+
+}
+
+
+#navMobilMenu{
+  display:none;
+}
+.lookSee_container{
   background-color: white;
-  padding: 3%;
-}
-
-.main_content {
-  width: 40vw;
-  margin: 0 auto;
+  height: 5rem;
+  margin-top: 10rem;
+  float:right;
+  margin-right: -2rem;
 
 }
 
-.images_container {
- display:flex;
- justify-content: center;
+.bannerContainer{
+  padding: 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.service_image {
-  height: 40%;
-  width: auto;
-  margin: 0 auto;
+.banner{
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
-.Philosophy_Appointments {
+.productsContainer{
+
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
+  position: relative;
+  margin-top: 28.5rem;
+  height: 8rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.productImageContainer{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 5rem;
+   margin-left:6rem;
+}
+
+.productImageContainer img{
+  height: 40%;
+  width: 40%;
+}
+
+.productTextContainer{
+   display: flex;
+   flex-direction: column;
+   width:40%;
+   margin-top: 0.5rem;
+   margin-left:5rem;
 
 }
 
-.col_title {
-  text-transform: uppercase;
-  background-color: #5E9EA0;
-  color: white;
-  width: 50%;
+.philosophyAppointmentsContents{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 4rem;
 }
 
-.columns {
-  width: 45%;
+.philosophyAppointmentsText{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;;
+  text-align: left;
+  width:35%;
+  margin-right: 5%;
+}
 
+.textHeader{
+  background-color: cadetblue;
+  padding: 0.5rem 3rem 0.5rem 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color:white;
+  margin-bottom: 1rem;
+}
+
+.tshellFooterContainer{
+  background-color: azure;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+}
+
+#footerLogo{
+  background-image: url("../../resources/images/logo-black.png");
+
+
+}
+
+@media only screen and (max-width:1060px){
+
+  body{
+    width: 100%;
+
+  }
+
+
+  .mainContentContainer{
+    width:100%;
+
+    margin: 0 2rem;
+  }
+
+  .lookSee_container{
+    background-color: white;
+    height: 2.83rem;
+    margin-top: 5rem;
+    float:right;
+
+
+  }
+
+  .bannerContainer{
+    padding: 0.75rem 4rem;
+
+  }
+
+  .banner{
+
+    font-size: 1.33rem;
+
+  }
+
+  .mainContent{
+
+    height: 22rem;
+  }
+
+  .productsContainer{
+
+    justify-content: space-around;
+  }
+  .philosophyAppointmentsText{
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width:470px){
+
+  body{
+    width: 100%;
+  }
+  .mainContent{
+      height: 17rem;
+      background-position: 20%;
+  }
+ .mainContentContainer{
+   margin:0;
+ }
+  .lookSee_container{
+    background-color: white;
+    height: 3rem;
+    margin-top: 9rem;
+    width:100%;
+    float:right;
+
+
+  }
+
+  .bannerContainer{
+    width: 100%;
+  }
+
+
+  .productsContainer{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    margin-top: 26.04rem;
+    margin-left: 3rem;
+    padding-bottom: 3.77rem;
+  }
+
+ .productTextContainer{
+   font-size: 0.77rem;
+   margin-bottom: 1.54rem;
+ }
+
+ .philosophyAppointmentsContents{
+   margin-top:7.54rem;
+   flex-direction: column;
+ }
+
+ .philosophyAppointmentsText{
+   width:100%;
+   margin-left:0;
+   margin-bottom: 4rem;
+   font-size:0.77rem;
+ }
+
+ #tshellFooterCopywrite, .brandText{
+   display:none;
+ }
+
+#bottomLogo{
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#navDesktopMenu{
+  display:none;
+}
+
+#navMobilMenu{
+  display:inline-block;
+}
 }
