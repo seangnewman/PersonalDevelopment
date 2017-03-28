@@ -1,0 +1,292 @@
+html{
+
+  width: 65vw;
+  font-size: 14px;
+  margin: 0 auto;
+}
+body {
+  width: 65vw;
+  font-size: 14px;
+  margin: 0 auto;
+  font-family: 'Open Sans';
+}
+
+nav {
+  height: 4rem;
+  align-content: center;
+  margin: 0 15px;
+  width: 65vw;
+  margin: 0 auto;
+  position: absolute;
+}
+nav img{
+  height: 2rem;
+  width: auto;
+  float:right;
+}
+
+.active a{
+  color:#399BD1 !important;
+  background-color: #f8f8f8 !important;
+}
+
+
+
+
+.jumbotron, .jumbotron-bike, #get-going{
+  height: 50rem;
+  width: 100%;
+  background-color: #F7E1A8;
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  /*position: absolute; */
+  width: 65vw;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 11.85rem;
+  padding-bottom: 11.85rem;
+}
+
+.jummbotron-bike{
+    background-image: url("../../resources/images/jumbotron-bike.jpg");
+}
+
+.jummbotron-beer{
+background-image: url("../../resources/images/jumbotron-beer.jpg");
+}
+
+.jummbotron-duffel{
+background-image: url("../../resources/images/jumbotron-duffel.jpg");
+}
+.jummbotron-flowers{
+background-image: url("../../resources/images/jumbotron-flowers.jpg");
+}
+
+
+
+.banner{
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+}
+
+.getgoing-banner{
+
+ font-family: 'Monoton';
+ font-size: 7.1rem !important;
+ color:white;
+ width: auto;
+ height: auto;
+
+}
+
+.jumpstart-banner{
+
+  font-size:1.5rem;
+
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.8rem;
+   text-shadow: 2px 2px #000000;
+  color:white;
+
+}
+
+.featuredProducts-container{
+  margin: 0 auto;
+
+}
+
+.featuredProduct-banner{
+
+  font-size: 1.7rem;
+  color: #399bd1;
+  font-weight: bold;
+
+  margin: 20px 0;
+
+}
+
+.col-md-4, .col-sm-12{
+
+}
+.featured_image_container{
+    overflow: hidden;
+}
+
+
+.featured_image{
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0.7;
+  transition: opacity 500ms;
+
+}
+
+.featured_image:hover{
+
+  transform: scale(1.3);
+
+}
+
+
+.jumbotron .btn{
+  color:white;
+  width: 11.4rem;
+  padding: 1.3rem 0 1.3rem 0;
+  margin-bottom: 11.4rem;
+
+}
+
+.jumbotron .btn-link {
+  background-color: #399bd1;
+}
+
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.product-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+
+}
+
+
+.product-categories{
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #399bd1;
+}
+
+.product-categories ul li {
+  line-height: 1.4;
+  color:rgba(0,0,0,0.7);
+}
+
+.project-desc{
+  margin:0 2rem 0 0 ;
+}
+
+.products-container {
+  margin-bottom: 5.85rem;
+
+  padding: 0;
+}
+
+.idea-container{
+
+  width: 65vw;
+  margin: 5.85rem 0 5.2rem 0;
+  background-color: #f3f3f3;
+
+
+}
+
+.ideas{
+   : 2px green solid;
+   justify-content: center;
+   align-content:  center;
+   margin: 0 auto;
+   width: 65vw;
+   position: absolute;
+}
+
+.ideas-text{
+
+  margin-bottom: 5.2rem;
+  width: 50rem;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  margin 0 auto;
+}
+
+.idea-banner{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 5.2rem 0 1.4rem 0;
+}
+
+
+
+.learnmore-container .btn{
+  color:white;
+  width: 11.4rem;
+  padding: 1.3rem 0 1.3rem 0;
+  margin-bottom: 5.2rem;
+  margin-top: 2rem;
+
+}
+
+.learnmore-container .btn-link {
+  background-color: #399bd1;
+}
+
+
+@media only screen and (max-width:1060px) {
+
+html{
+  width:100%;
+
+}
+
+  body{
+    width: 95%;
+
+  }
+
+
+
+  nav{
+    width: 95%;
+
+    height: auto;
+  }
+  nav img{
+    display:none;
+
+  }
+
+
+  ul.nav.navbar-nav.pull-left {
+    float:left !important;
+    display:flex;
+    flex-direction: column;
+  }
+
+  ul.nav.navbar-nav.pull-left{
+    display:inline-block;
+  }
+
+  .get-going{
+    width: 100%;
+  }
+
+  .idea-container{
+    width: 100%;
+  }
+
+ .get-going{
+   font-size: 5.7rem;
+ }
+
+ .project-desc{
+   margin-bottom: 2rem;
+ }
+}
