@@ -1,0 +1,123 @@
+/*
+  Custom styles for Trackster App
+*/
+
+html{
+  font-size: 16px;
+}
+
+body{
+  margin: 0 auto;
+  height: auto;
+}
+
+.tracksterHeader{
+  width:100%
+  height:20vh;
+}
+
+.tracksterHeaderContainer{
+  background-color: rgb(35,2,63);
+  height: 20vh;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.tracksterRow{
+  width: 100%;
+  height: 10vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tracksterRowContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.tracksterTitle{
+  height: 4vh;
+}
+
+.tracksterTitleContainer #tracksterTitle{
+  font-family:Righteous;
+  font-size: 2.5rem;
+  color: rgb(255,0,171);
+}
+
+.tracksterSearch{
+  height: 4vh;
+}
+
+.searchInput{
+  border-radius: 30px 30px 30px 30px;
+  color: rgb(191,191,191);
+}
+
+
+.tracksterSearchContainer{
+  padding-top: 0.75rem;
+}
+
+.tracksterSearchButtonContainer{
+  width:100%;
+  padding-top: 0.75rem;
+}
+
+.searchbutton{
+  background-color: rgb(255,102,204);
+  border-radius: 30px 30px 30px 30px;
+  color:rgb(35,2,63);
+  padding: 0 3rem;
+  font-size: 1.5rem;
+}
+
+.tracksterMenu{
+  width:100%;
+  padding: 0;
+  margin: 0;
+}
+
+.tracksterMenuContainer{
+  background-color: rgb(104,0,255);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.menuHeaderContainer{
+  width: 100%;
+  height: 5vh;
+  color:rgb(255,255,255);
+  font-weight: bold;
+  padding-top: .5rem;
+}
+
+.songData{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#playIcon{
+  text-align: right;
+}
+
+#playIcon a{
+  text-decoration: none;
+  color:rgb(255,0,171);
+}
+
+#trackNoData{
+  margin-left: 1rem;
+  margin-right: -1rem;
+}
+
+#popularityData{
+  text-align: right;
+}
