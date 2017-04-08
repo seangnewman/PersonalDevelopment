@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Match Game</title>
+  <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="icon"  type="image/png" href="./resources/images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">
+</head>
+<body>
+  <div class="container mainBody">
+
+    <div class="row mainBodyContainer">
+
+      <div class="col-md-3 col-sm-12 matchGameInstructions">
+        <div class="matchGameInstructionsContainer">
+          <h2>Match Game</h2>
+          <h4>Rules</h4>
+          <p>
+            Click on a card to reveal the number on the other side. Click on a second card to try and find a match to the first. If you succeed, the pair will be
+            removed from play. If not, try again!
+          </p>
+          <h4>How To Win</h4>
+          <p>
+            You win when all pairs have been found.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="col-md-9 col-sm-12 matchGameGrid">
+        <div class="row matchGameGridContainer" id="game">
+<!--
+        <div class="col-md-3 col-sm-3 card" id="card01">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card02">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card03">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card04">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card05">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card06">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card07">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card08">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card09">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card10">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card11">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card12">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card13">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card14">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card15">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 card" id="card16">
+          <div class="cardContainer">
+            <div class="cardTextContainer">
+              <div class="cardText"></div>
+            </div>
+          </div>
+        </div>
+-->
+      </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./resources/js/match-game.js"></script>
+  <script type="text/javascript" src="./resources/js/tests.js"></script>
+</body>
+</html>
