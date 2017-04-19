@@ -1,0 +1,131 @@
+html{
+    font-size:16px;
+    background-color: #F4F4F4;
+}
+
+body{
+  width: 80vw;
+
+  margin: 0 auto;
+}
+article{
+  width: 100%;
+
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1{
+  text-align: center;
+  color:white;
+  background-color: black;
+  padding: .25rem;
+}
+
+#leftPane{
+  width:55%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#imageContainer{
+  min-height: 50rem;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kate{
+  background-image: url("../../resources/images/kate.jpg");
+}
+
+.albert{
+  background-image: url("../../resources/images/albert.jpg");
+}
+.barack{
+  background-image: url("../../resources/images/barack.jpg");
+}
+
+.cicely{
+  background-image: url("../../resources/images/cicely.jpg");
+   background-position: 50% 40%;
+}
+
+.neil{
+  background-image: url("../../resources/images/neil.jpg");
+}
+
+.sydney{
+  background-image: url("../../resources/images/sydney.jpg");
+  background-position: 50% 40%;
+}
+
+
+.john{
+  background-image: url("../../resources/images/john.jpg");
+}
+
+.iceCube{
+  background-image: url("../../resources/images/iceCube.jpg");
+}
+
+.ali{
+  background-image: url("../../resources/images/ali.jpg");
+}
+
+.lincoln{
+  background-image: url("../../resources/images/lincoln.jpg");
+}
+
+
+
+#quoteButton{
+  margin-top:  .5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border : 0 transparent;
+  background-color: black;
+  color:white;
+  padding: .5rem;
+  border-radius: 10px;
+  padding: : 2rem;
+}
+
+
+#rightPane{
+  width:35%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+#quoteContainer{
+  min-height: 60%;
+  display:flex;
+  flex-direction: column;;
+  justify-content: center;
+  margin: 1rem;
+}
+
+#quote{
+  padding-top:20rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#author{
+  padding-top: 2rem;
+  font-size:1.25rem;
+  float:right;
+}
+
+#twitterButton{
+  font-size: 1.5rem;
+  text-align: center;
+  border : 0 transparent;
+  color:white;
+  background-color: blue;
+
+  padding: 5rem:
+}
