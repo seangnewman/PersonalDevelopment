@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>FreeCodeCamp Local Weather Demo</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./resources/css/styles.css">
+</head>
+<body>
+  <main>
+    <article id="mainBanner">
+    <section id="canvasSection">
+      <canvas id="titleCanvas" >Your browser does not support canvas.</canvas>
+    </section>
+
+    <section>
+      <header>
+        <section id="currentConditions">
+          <div class="dailyForcastContainer" id="day-current">
+            <header id="currentHeader">
+              <h1 id='city'></h1>
+              <!--<div id='country'></div> -->
+              <h2 class="currentDate"></h2>
+              <h2 class="currentTime"></h2>
+            </header>
+            <div class="dailyConditions">
+              <div class="generalConditions">
+            <!--    <div class="currentHour"></div> -->
+              </div>
+              <div class="forecastSummary">
+                <div class="specificConditions">
+                <div class="specificHeader">
+                    <div class="imageContainer">
+                      <div class="theIconr" id="currentIcon"><img id="currentForecastIcon" src="#"></div>
+                    </div>
+                    <div class="temperatureForecastContainer">
+                        <div class="temperature" id="temp-current"></div>
+                      </div>
+               </div>
+                <table>
+                  <tr><td>Condition:</td><td id="conditions-current"</td></tr>
+                  <tr><td>Wind Speed:</td><td  id="windCurrent"></td></tr>
+                  <tr><td>Humidity:</td><td id="humidityCurrent"></td></tr>
+                </table>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="middle">
+
+          <h2>The Extended Forecast over the next 120 hours</h2>
+          <h4>Select the date for expanded information</h4>
+        </middle>
+
+        <section  class = '.accordion'id="forecastContainer">
+
+
+
+        </section>
+        <footer>
+          <div id="theFooter">Created by Sean Newman of NewManuevers</div>
+        </footer>
+      </header>
+    </section>
+  </article>
+  <article id="weatherConditionsContainer">
+
+
+ </article>
+  </main>
+    <script src="./resources/js/scripts.js"></script>
+
+</body>
+</html>
