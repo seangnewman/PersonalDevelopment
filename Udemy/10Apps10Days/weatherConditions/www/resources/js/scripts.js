@@ -18,11 +18,11 @@ function getData(){
 
   xmlhttp.onreadystatechange =  processResult;
   var $zipCode =  document.getElementById('zip').value;
-  alert($zipCode);
+
   var $url = 'http://api.openweathermap.org/data/2.5/weather?zip=' + $zipCode + ',us&appid=' + $appid ;
 
 //  url+= document.getElementById('zip').value;
-  alert($url);
+ 
   //xmlhttp.open('GET', url, false);
   //xmlhttp.send();
   $.getJSON($url)
