@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FreeCodeCamp Wikipedia Viewer</title>
+  <meta charset="utf-8"/>
+  <title>FreeCodeCamp Local Weather Demo</title>
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+
+   <link type="text/css" rel="stylesheet" href="./resources/css/styles.css">
+  <link
+</head>
+<body>
+  <main>
+    <article>
+      <section>
+        <canvas id="FCCBanner" >Your browser does not support canvas.</canvas>
+      </section>
+    </article>
+      <article>
+        <header>
+
+        <div id="buttonOptions">
+          <section id="randomWiki">
+            <button id="getRandomWiki">Random Entry</button>
+          </section>
+          <section id="searchWiki">
+            <button id="getSearchWiki">Search</button>
+          </section>
+       </div>
+
+        <section id="wikiSearchSection">
+          <form id="wikiResetForm">
+            <input type="reset" id="wikiResetFormButton"/>
+          </form>
+          <div id="searchError">Please enter a valid search entry</div>
+          <form id="wikiSearchForm">
+            <input type="text" name="wikiSearchText" id='wikiSearchText'><br>
+
+            <input type="submit" value="Go" id="getWikiSearchText">
+
+          </form>
+
+
+
+
+        </section>
+
+      </header>
+      <div id="wikiResults"  class="vSlider" >
+        <!--- For now build a list of items, but we want to roll these over when done -->
+
+
+      </div>
+
+      </article>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="./resources/js/scripts.js"></script>
+
+</body>
+
+</html>

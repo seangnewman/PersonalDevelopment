@@ -1,0 +1,145 @@
+html{
+  font-size: 16px;
+}
+
+body{
+  width: 80vw;
+  margin: 0 auto;
+  background: green;
+  background: linear-gradient(to right, green, blue, green);
+  background: -webkit-linear-gradient(right, green, blue, green); /* For Safari 5.1 to 6.0 */
+
+}
+
+section{
+  text-align: center;
+}
+
+#FCCBanner{
+  width  :700px;
+  height :150px;
+   
+}
+
+#buttonOptions{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+
+}
+
+#buttonOptions section{
+  width: 50%;
+
+
+}
+
+
+#buttonOptions button{
+  font-size: 1.5rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius:100%;
+   background-color:rgb(0, 3, 249);
+
+
+   border: 0.5rem #002DA5 solid;
+   color: rgb(46, 255, 0);
+
+}
+
+#buttonOptions button:active{
+
+}
+
+.vSlider{
+
+
+}
+
+#wikiResults{
+
+}
+
+#wikiSearchForm{
+  display: none;
+  text-align: center;
+}
+
+#wikiSearchText{
+  font-size: 2rem;
+  line-height: 1.5rem;
+  border-radius: 1rem;
+  background-color: rgb(46, 255, 0);
+
+}
+
+#getWikiSearchText{
+  font-size: 1.25rem;
+  margin: 1rem;
+  background-color:rgb(0, 3, 249);
+  border-radius:100%;
+  border: 0.5rem #002DA5 solid;
+  color: rgb(46, 255, 0);
+
+}
+
+#searchError{
+  color:white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display:none;
+  margin: .5rem;
+}
+
+#wikiResetForm{
+  display:none;
+}
+
+#wikiResetFormButton{
+  font-size: 1.5rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius:100%;
+  background-color:rgb(0, 3, 249);
+
+
+   border: 0.5rem #002DA5 solid;
+   color: rgb(46, 255, 0);
+   margin: 1rem;
+
+}
+
+#wikiResults{
+  margin: 0 auto;
+  width: 60%;
+}
+
+.Wiki{
+  color:white;
+  text-align: left;
+  padding: 1rem;
+
+
+}
+
+.wikiTitle{
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.wikiDescription{
+  font-size:  1.25rem;
+  color: rgb(46, 255, 0);
+
+}
+
+a{
+  color: rgb(46, 255, 0);
+
+  text-decoration: none;
+}
