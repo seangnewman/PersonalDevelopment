@@ -1,0 +1,8 @@
+ #container{
+   margin: 2rem;
+ }
+
+#mapCanvas{
+  border: 2px solid black;
+  min-height: 200px;
+}
