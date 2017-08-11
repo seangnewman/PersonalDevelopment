@@ -14,34 +14,32 @@ let Yelp = {
             return new Promise(resolve => resolve(accessToken));
         }
         return(
-            fetch(CORSAnywhere + yelpAccessToken, {method : 'POST'}).then(response => response.json()).then(jsonResponse => accessToken = jsonResponse.access_token)
+            fetch(CORSAnywhere + yelpAccessToken, {method : 'POST'}).then(response => {
+                if(response.ok){
+                    return response.json();
+                }
+                
+                throw new Error('Request failed!');
+            },
+           networkError => console.log(networkError.message)
+        ).then(jsonResponse => accessToken = jsonResponse.access_token)
         );
     }// End get accessToken
     
     ,search : function(term, location, sortBy){
         return Yelp.getAccessToken().then(() => {
-
-            //https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=food&location=85338&sort_by=best_match
             const YelpBusinessUrl = `https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`;
-            console.log('Access Token = ' + accessToken);
-            console.log('URL = ' + CORSAnywhere + YelpBusinessUrl);    
             return fetch(CORSAnywhere + YelpBusinessUrl, {headers: {Authorization : `Bearer ${accessToken}`}});
         }).then(response => {
-            if(!response){
-               console.log('unable to return response');
-               throw new Error('No Response Returned!');
-               
-            }
-
             if(response.ok){
                 return response.json();
             }
             throw new Error('Request failed!');
         
         },
-    networkError => console.log(networkError.message,
-    err => console.log(err.message)
-    )).then(jsonResponse =>{
+    networkError => console.log(networkError.message)
+    
+    ).then(jsonResponse =>{
             if(jsonResponse.businesses){
                 return jsonResponse.businesses.map(business => {
                     return {
