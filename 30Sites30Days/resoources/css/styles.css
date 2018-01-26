@@ -1,0 +1,55 @@
+html{
+    background-color: black;
+    color:white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+    margin:2.5rem 0;
+    width:100%;
+}
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+table{
+    width:60%;
+    margin: 0 auto;
+}
+
+#leftColumn{
+    width: 20%;
+ }
+img{
+    height: 40em;
+    width: auto;
+}
+
+#rightcolum{
+    width:80%;
+    font-size: 1.75rem;
+ }
+
+h3{
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 1rem 1rem;
+}
+
+p{
+    font-size:1.5rem;
+    margin: 1rem 1rem;
+}
+
+a:visited{
+    color:greenyellow;
+}
