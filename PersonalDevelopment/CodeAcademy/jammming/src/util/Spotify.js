@@ -3,7 +3,7 @@ const clientSecret = '07c6f39168d140d6882dd5cbb7c2f2cc';
 const redirectUri = 'http://localhost:3000'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
 let accessToken;
 
-export const Spotify = {
+ export const Spotify = {
   getAccessToken() {
     if (accessToken) {
       return accessToken;
@@ -24,7 +24,7 @@ export const Spotify = {
   },
 
   search(term) {
-    console.log('In Spotify search the term is ' + term);
+   
     const accessToken = Spotify.getAccessToken();
     return fetch(`https://api.spotify.com/v1/search?type=track&q=${term}`, {
       headers: {
@@ -36,8 +36,6 @@ export const Spotify = {
       if (!jsonResponse.tracks) {
         return [];
       }
-      console.log('In Spotify returning tracks' + jsonResponse.tracks.items[0]);
-      console.log(jsonResponse.tracks.items[0]);
       return jsonResponse.tracks.items.map(track => ({
         id: track.id,
         name: track.name,
@@ -56,12 +54,13 @@ export const Spotify = {
 
     const accessToken = Spotify.getAccessToken();
     const headers = { Authorization: `Bearer ${accessToken}` };
-    let userId;
+    let userId ;
 
     return fetch('https://api.spotify.com/v1/me', {headers: headers}
     ).then(response => response.json()
     ).then(jsonResponse => {
       userId = jsonResponse.id;
+       
       return fetch(`https://api.spotify.com/v1/users/${userId}/playlists`, {
         headers: headers,
         method: 'POST',
@@ -69,7 +68,7 @@ export const Spotify = {
       }).then(response => response.json()
       ).then(jsonResponse => {
         const playlistId = jsonResponse.id;
-        console.log(jsonResponse.id);
+        console.log(trackUris);
         return fetch(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`, {
           headers: headers,
           method: 'POST',
@@ -79,4 +78,3 @@ export const Spotify = {
     });
   }
 };
-export default Spotify;
