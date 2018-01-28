@@ -10,19 +10,9 @@ class App extends Component {
 
   constructor(props){
     super(props);
-    this.state = { searchResults:[ {
-        name    : 'Higher Ground', 
-        artist  : 'Stevie Wonder', 
-        album   : 'Innervisions',
-        id      : 1
-    } ],
-    playlistName : 'WonderMan!',
-    playlistTracks : [{
-        name    : 'That Girl', 
-        artist  : 'Stevie Wonder', 
-        album   : 'Musicqaurium',
-        id      : 2
-    }]
+    this.state = { searchResults:[],
+    playlistName : '',
+    playlistTracks : []
     };
 
     this.addTrack = this.addTrack.bind(this);
@@ -33,18 +23,22 @@ class App extends Component {
   }
 
   addTrack(track){
-    
+    console.log('The track id is ' + track.id);
     var elementPos = this.state.playlistTracks.map(function(x) {return x.id; }).indexOf(track.id);
     
-    if(elementPos = -1){
+    const newTrack = {
+      name : track.name,
+      artist : track.artist,
+      album : track.album,
+      id : track.id,
+      uri : track.uri
+    };
+
+    console.log("The new track is " + newTrack);
+
+    if(elementPos === -1){
         let currentTracks = this.state.playlistTracks;
-
-        currentTracks[currentTracks.length] = {  
-          name: track.name,
-          artist : track.artist,
-          album : track.album
-        }
-
+        currentTracks[currentTracks.length] =  newTrack;
         this.setState({
           playlistTracks : currentTracks
         });
@@ -56,38 +50,54 @@ class App extends Component {
 
     var elementPos = this.state.playlistTracks.map(function(x) {return x.id; }).indexOf(track.id);
     
+    
+
+    console.log("In removeTrack the element position is " + elementPos);
+    
+    
+
     if(elementPos > -1){
-     let currentTracks = this.state.playlistTracks.splice(elementPos, 1);
+     //let currentTracks = this.state.playlistTracks.splice(elementPos, 1);
+
+     var curElementTracks = this.state.playlistTracks;
+
+     var removedElement = curElementTracks.splice(elementPos, 1);
+     
+     console.log('The new array is :');    
+     console.log(curElementTracks);
      this.setState({
-          playlistTracks : currentTracks
+          playlistTracks :curElementTracks
         });
+     
+     console.log(this.state.playlistTracks);
     }
 
   }
 
   updatePlaylistName(name){
-    console.log("Updating Playlist Name");
     this.setState({
       playlistName : name
     });
   }
 
   search(searchTerm){
-    console.log("In App.js the search term is " + searchTerm);
     console.log(Spotify.search(searchTerm));
     var PromiseObject = Spotify.search(searchTerm);
-    console.log(PromiseObject);
-    this.state.searchResults = PromiseObject;
-    console.log("The searchResult value is " + this.state.searchResults);
-    console.log(this.state.searchResults.id);
+    
+    PromiseObject.then(searchResults => {
+      this.setState({searchResults: searchResults});
+    });
   }
 
   savePlaylist(){
     //Generates an array of uri values called trackURIs from the playlistTracks property
     let trackURIs = this.state.playlistTracks;
-    console.log("About to savePlayList()");
-    Spotify.savePlaylist();
-    console.log("Updating playlist name from " + this.state.playlistName);
+
+    let tracks = trackURIs.map(function(uri){
+      return uri.uri;
+    });
+
+    Spotify.savePlaylist(this.state.playlistName, tracks);
     this.state.playlistName = 'New Playlist';
     this.searchResults = [];
   }
@@ -102,10 +112,10 @@ class App extends Component {
               <SearchBar  onSearch={this.search}/>
               <div className="App-playlist">
               {/*<!-- Add a SearchResults component -->*/}
-              <SearchResults searchResults = {this.state.searchResults} onAdd={this.addTrack} />
+              <SearchResults searchResults = {this.state.searchResults} onAdd={this.addTrack} isRemoval={false} />
               {/*<!-- Add a Playlist component --> */}
               <PlayList  playlistName={this.state.playlistName} playlistTracks = {this.state.playlistTracks}  
-              onRemove={this.removeTrack} onNameChange={this.updatePlaylistName} onSave={this.savePlaylist}/>
+              onRemove={this.removeTrack} onNameChange={this.updatePlaylistName} onSave={this.savePlaylist} isRemoval={true} />
               </div>
             </div>
           </div>

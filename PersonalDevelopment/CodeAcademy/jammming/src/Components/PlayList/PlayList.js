@@ -9,11 +9,16 @@ export class PlayList extends React.Component {
     super(props);
 
     this.handleNameChange = this.handleNameChange.bind(this);
+    this.disableAddEvent = this.disableAddEvent.bind(this);
   }
   
 handleNameChange(event){
   const target = event.target.value;
   this.props.onNameChange(target);
+}
+
+disableAddEvent(){
+
 }
 
   render() {
@@ -22,8 +27,8 @@ handleNameChange(event){
         <div className="Playlist">
             <input value={this.props.playlistName} onChange={this.handleNameChange} />
             {/*<!-- Add a TrackList component --> */}
-             <TrackList  tracks={this.props.playlistTracks}   onRemove={this.props.onRemove}/>
-            <a className="Playlist-save" onClick={this.props.onSave}>SAVE TO SPOTIFY</a>
+             <TrackList  tracks={this.props.playlistTracks} isRemoval={true} onRemove={this.props.onRemove} onAdd={this.disableAddEvent} />
+            <a className="Playlist-save" onClick={this.props.onSave} >SAVE TO SPOTIFY</a>
         </div>
    );
   }
