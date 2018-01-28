@@ -1,0 +1,79 @@
+html{
+    font-size: 16px;
+    font-family: 'Aldrich', sans-serif;
+    margin: 0;
+    color:white;
+}
+
+#imageContainer{
+    height: 100%;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+    background-image: url("../images/5.jpg");
+    margin:0;
+    color:white;
+ }
+
+section{
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+}
+
+#leftImage{
+    height: 100%;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+    background-image: url("../images/1.jpg");
+    margin:0;
+    color:white;
+ }
+
+#rightImage{
+    height: 100%;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+    background-image: url("../images/1.jpg");
+    margin:0;
+    color:white;
+  }
+
+section div{
+    color:greenyellow;
+    font-size: 3rem;
+    width:33%;
+  }
+
+img{
+    height: 15rem;
+    width: auto;
+}
+
+div p{
+    font-size: 1.25rem;
+}
+
+section #titleIsle{
+    font-size: 4rem;
+    text-align: center;
+    color:greenyellow;
+    top : 10rem;
+    position:absolute;
+    width: 100%;
+    
+}
+
+#titlelIsleContainer{
+    
+    height: 40rem;
+    width:auto;
+    margin: 0;
+    color:white;
+    text-align: center;
+}

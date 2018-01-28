@@ -1,0 +1,84 @@
+html{
+    background-color: #FBF3EA;
+    font-size: 16px;
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+body{
+    width:95%;
+    margin:0 auto;
+}
+main{
+ width:100%;
+}
+h1{
+    background-color: black;
+    color:#FBF3EA; 
+    height: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+section{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    margin: 0;
+    
+}
+
+#rightPane{
+    width:55%;
+    margin: 0;
+    padding: 0;
+    font: size 2;
+    
+}
+
+
+#leftPane{
+    width: 45%;
+    margin: 0;
+    padding: 0;
+}
+
+#imageContainer{
+    height: 25rem;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+  }
+
+  .menu1{
+    background-image: url("../images/1.jpg");
+  }
+  .menu2{
+    background-image: url("../images/2.jpg");
+  }
+  .menu3{
+    background-image: url("../images/3.jpg");
+  }
+  .menu4{
+    background-image: url("../images/4.jpg");
+  }
+  .menu5{
+    background-image: url("../images/5.jpg");
+  }
+  .menu6{
+    background-image: url("../images/6.jpg");
+  }
+  #menuContainer{
+      width:100%;
+  }
+  #menuSelections{
+      text-align: center;
+      margin: 1rem;
+      
+  }
+
+   
+  
